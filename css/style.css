@@ -9,6 +9,10 @@ body{
     padding:0rem 6.25rem;
 }
 
+#header {
+    height: 100vh;
+}
+
 /* Nav ========================================================== */
 
 #navigation {
@@ -63,11 +67,14 @@ body{
     display: flex;
 }
 
+#top_left {
+    margin-top: 5%;
+}
+
 #top_left>h1 {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 70px;
-    text-align: justify;
     color: #151850;
 }
 
@@ -83,6 +90,16 @@ body{
     font-weight: 700;
     font-size: 24px;
     color: #738393;
+}
+
+#top_left>div {
+    background-color: #414479;
+    width: 600px;
+    height: 5px;
+    border-radius: 1.5625rem;
+    margin-top: 6.25rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #top_right>img {
