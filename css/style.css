@@ -9,10 +9,6 @@ body{
     padding:0rem 6.25rem;
 }
 
-#header {
-    height: 100vh;
-}
-
 /* Nav ========================================================== */
 
 #navigation {
@@ -97,7 +93,7 @@ body{
     width: 70%;
     height: 5px;
     border-radius: 1.5625rem;
-    margin-top: 6.25rem;
+    margin-top: 10%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -108,3 +104,4 @@ body{
     z-index: -1;
 }
 /* top of page ============================================= */
+
