@@ -116,12 +116,13 @@ body{
 
 #top_left {
     margin-top: 8%;
+    width: 50vw;
 }
 
 #top_left>h1 {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 70px;
+    font-size: 3.64vw;
     color: #151850;
 }
 
@@ -150,10 +151,16 @@ body{
     margin-right: auto;
 }
 
+#top_right {
+    width: 50vw;
+}
+
 #top_right>img {
     position: relative;
     transform:translate(100px, 0px);
     z-index: -1;
+    height:auto;
+    width: 100%;
 }
 /* top of page */
 /* ================================================== */
@@ -169,7 +176,19 @@ body{
 }
 
 .activate {
+    animation-duration: .5s;
+    animation-name: slidein;
     width: 70%;
+}
+
+@keyframes slidein {
+    from {
+      width: 10%;
+    } 
+
+    to {
+        width: 70%;
+    }
 }
 
 #discover {
