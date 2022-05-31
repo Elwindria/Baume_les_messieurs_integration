@@ -8,7 +8,7 @@ const carousel_3 = document.querySelector(".carousel_3");
 const carousel_4 = document.querySelector(".carousel_4");
 
 carousel_1.onclick = function() {
-    remove_activate();
+    remove_activate(1);
     carousel_1.classList.add("activate");
 }
 
@@ -30,7 +30,8 @@ carousel_4.onclick = function() {
 
 function remove_activate() {
     photo_carousel.forEach(element => {
-        if (element.classList.contains("activate")) {
+        console.log(element[nbr_photo])
+        if (element.classList.contains("activate") && element != element[nbr_photo]) {
             element.classList.add("last");
         } else if (element.classList.contains("last")){
             element.classList.remove("last");
