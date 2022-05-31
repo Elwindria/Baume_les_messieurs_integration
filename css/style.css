@@ -157,20 +157,30 @@ body{
 }
 /* top of page */
 /* ================================================== */
-/* découvrire */
+/* découvrire / carousel */
 
-#discover {
-    height:100vh;
-    display: flex;
-    background: rgba(15, 15, 15, 0.3);
-    z-index: 1;
+.photo_carousel:hover {
+    transform: scale(1.01);
+    cursor: pointer;
 }
 
 .photo_carousel {
-    min-width: 20%;
-    max-width: 40%;
+    transition: transform .3s
+}
+
+.activate {
+    width: 70%;
+}
+
+#discover {
+    height: 100vh;
     display: flex;
-    z-index: -1;
+    background: rgb(15, 15, 15);
+}
+
+.photo_carousel {
+    min-width: 10%;
+    max-width: 70%;
 }
 
 .carousel_1 {
@@ -197,5 +207,5 @@ body{
     background-size: cover;
 }
 
-/* découvrire */
+/* découvrire / carousel */
 /* ================================================== */
