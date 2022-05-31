@@ -110,7 +110,7 @@ body{
 
 #top_of_page {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
     padding: 0 100px;
 }
 
@@ -145,6 +145,7 @@ body{
     height: 5px;
     border-radius: 1.5625rem;
     margin-top: 10%;
+    margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -158,7 +159,43 @@ body{
 /* ================================================== */
 /* découvrire */
 
+#discover {
+    height:100vh;
+    display: flex;
+    background: rgba(15, 15, 15, 0.3);
+    z-index: 1;
+}
 
+.photo_carousel {
+    min-width: 20%;
+    max-width: 40%;
+    display: flex;
+    z-index: -1;
+}
+
+.carousel_1 {
+    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/abbaye.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel_2 {
+    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/grotte.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel_3 {
+    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/cascade.JPG);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.carousel_4 {
+    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/reculee.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /* découvrire */
 /* ================================================== */
