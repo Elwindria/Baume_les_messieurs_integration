@@ -30,6 +30,11 @@ carousel_4.onclick = function() {
 
 function remove_activate() {
     photo_carousel.forEach(element => {
+        if (element.classList.contains("activate")) {
+            element.classList.add("last");
+        } else if (element.classList.contains("last")){
+            element.classList.remove("last");
+        }
         element.classList.remove("activate");
     });
 }

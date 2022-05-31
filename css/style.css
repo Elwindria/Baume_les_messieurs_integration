@@ -187,18 +187,18 @@ body{
 /* découvrire / carousel */
 
 .photo_carousel:hover {
-    transform: scale(1.01);
     cursor: pointer;
-}
-
-.photo_carousel {
-    transition: transform .3s
 }
 
 .activate {
     animation-duration: .5s;
     animation-name: slidein;
     width: 70%;
+}
+
+.last {
+    animation-duration: .5s;
+    animation-name: slideout;
 }
 
 @keyframes slidein {
@@ -208,6 +208,16 @@ body{
 
     to {
         width: 70%;
+    }
+}
+
+@keyframes slideout {
+    from {
+      width: 70%;
+    } 
+
+    to {
+        width: 10%;
     }
 }
 
