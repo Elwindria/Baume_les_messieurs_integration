@@ -15,6 +15,9 @@ body{
     height: 100vh;
     background-image: url(/Github/Baume_les_messieurs_website/images/autre_2.JPG);
     background-size: cover;
+    position: sticky;
+    top:0px;
+    z-index: -1;
 }
 
 #header_logo {
@@ -70,6 +73,8 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 0 100px;
+    position: sticky;
+    top:0px;
 }
 
 #navigation>div {
@@ -124,8 +129,10 @@ body{
 
 #top_of_page {
     display: flex;
-    min-height: 100vh;
+    height: 100vh;
     padding: 0 100px;
+    background-color: #FBFBFB;
+    z-index: 2;
 }
 
 #top_left {
@@ -151,7 +158,7 @@ body{
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.25vw;
-    color: #738393;
+    color: #445668;
 }
 
 #top_left>div {
@@ -172,7 +179,6 @@ body{
 #top_right>img {
     position: relative;
     transform:translate(100px, 0px);
-    z-index: -1;
     height:auto;
     width: 100%;
 }
