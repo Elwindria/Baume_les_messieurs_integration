@@ -26,10 +26,15 @@ body{
     height:calc(100vh - 11.25rem)
 }
 
+/* Logo Chapelle */
 #main_title>div {
     display: flex;
     align-items: flex-end;
     padding-left: 6.25rem;
+}
+
+.chapelle {
+    width: 11.7vw;
 }
 
 #main_title>h1 {
@@ -37,7 +42,7 @@ body{
     align-items: flex-end;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 65px;
+    font-size: 4.16vw;
     text-transform: uppercase;
     color: #FBFBFB;
     text-shadow: 0px 4px 25px #000000;
@@ -48,7 +53,7 @@ body{
 #trait_1 {
     background-color: #FBFBFB;
     height:.5rem;
-    width: 84.375rem;
+    width: 78.125vw;
     margin-bottom:5rem;
     margin-top: 1.875rem;
     border-radius: 25px;
@@ -67,13 +72,18 @@ body{
     padding: 0 100px;
 }
 
+#navigation>div {
+    display: flex;
+    align-items: center;
+}
+
 #name_web{
     text-transform:uppercase;
-    color: #414479;
+    color: #151850;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
-    font-size: 24px;
-    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    font-size: 1.7vw;
+    padding-left: 20px;
 }
 
 #navigation>nav>ul {
@@ -91,7 +101,7 @@ body{
 #navigation>nav>ul>li>a {
     text-decoration: none;
     color:#414479;
-    font-size: 24px;
+    font-size: 1.25vw;
     font-weight: 500;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -129,14 +139,14 @@ body{
 #top_left>h2 {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 50px;
+    font-size: 2.6vw;
     color: #151850;
 }
 
 #top_left>p {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 24px;
+    font-size: 1.25vw;
     color: #738393;
 }
 
