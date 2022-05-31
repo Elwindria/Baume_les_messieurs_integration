@@ -65,7 +65,7 @@ body{
 
 #navigation {
     background: rgba(251, 251, 251, 0.5);
-    height: 6.25rem;
+    height: 11.12vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -75,6 +75,10 @@ body{
 #navigation>div {
     display: flex;
     align-items: center;
+}
+
+.logo_baume {
+    width: 4vw;
 }
 
 #name_web{
