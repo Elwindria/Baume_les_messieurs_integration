@@ -81,7 +81,7 @@ body{
     width: 100vw;
     background-image: url(/Github/Baume_les_messieurs_website/images/autre_2.JPG);
     background-size: cover;
-    position: sticky;
+    position: fixed;
     top:0px;
     z-index: -1;
 }
@@ -133,6 +133,7 @@ body{
 /* top of page */
 
 #top_of_page {
+    margin-top: 100vh;
     height: 100vh;
     display: flex;
     padding: 0 100px;
