@@ -58,7 +58,6 @@ carousel_4.onclick = function() {
 
 /* Scroll fixed or relative for BarNav */
 
-const windows = DocumentFragment.windows
 const navigation = document.getElementById("navigation")
 
 window.scroll(function() {   
