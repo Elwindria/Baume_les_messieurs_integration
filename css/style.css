@@ -8,6 +8,14 @@ body{
     max-width: 1920px;
 }
 
+#false_header {
+    height:100vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    z-index: -1;
+}
+
 
 /* ================================================== */
 /* header */
@@ -75,13 +83,6 @@ body{
     display: flex;
     align-items: center;
     justify-content:space-around;
-    position: fixed;
-    top:0px;
-    z-index: 99;
-}
-
-.relative {
-    position: relative;
 }
 
 #navigation>#nav_left {
