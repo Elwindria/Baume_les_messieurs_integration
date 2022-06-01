@@ -59,12 +59,14 @@ carousel_4.onclick = function() {
 /* Scroll fixed or relative for BarNav */
 
 const navigation = document.getElementById("navigation")
+const scroll = document.documentElement.scrollTop
 
-window.scroll(function() {   
-    var scroll = $(window).scrollTop();
+window.onscroll = function() {
     if (scroll >= 400) {
         navigation.addClass("relative");
+        console.log(ok)
     } else {
         navigation.removeClass("relative");
     }
-});
+}
+

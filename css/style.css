@@ -8,13 +8,18 @@ body{
     max-width: 1920px;
 }
 
+
 /* ================================================== */
 /* header */
 
 #header {
     height: 100vh;
+    width: 100vw;
     background-image: url(/Github/Baume_les_messieurs_website/images/autre_2.JPG);
     background-size: cover;
+    position: fixed;
+    top:0px;
+    z-index: -2;
 }
 
 #header_logo {
@@ -23,7 +28,7 @@ body{
 
 #main_title {
     display: flex;
-    height:calc(100vh - 11.25rem)
+    height:calc(100vh - 5.625rem)
 }
 
 /* Logo Chapelle */
@@ -69,9 +74,10 @@ body{
     width: 100vw;
     display: flex;
     align-items: center;
+    justify-content:space-around;
     position: fixed;
+    top:0px;
     z-index: 99;
-    justify-content:space-around
 }
 
 .relative {
@@ -129,11 +135,11 @@ body{
 /* top of page */
 
 #top_of_page {
+    margin-top: 100vh;
     display: flex;
     height: 100vh;
     padding: 0 100px;
     background-color: #FBFBFB;
-    z-index: 2;
 }
 
 #top_left {
