@@ -15,9 +15,6 @@ body{
     height: 100vh;
     background-image: url(/Github/Baume_les_messieurs_website/images/autre_2.JPG);
     background-size: cover;
-    position: sticky;
-    top:0px;
-    z-index: -1;
 }
 
 #header_logo {
@@ -69,15 +66,15 @@ body{
 #navigation {
     background: rgba(251, 251, 251, 0.5);
     height: 11.12vh;
+    width: 100vw;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 100px;
-    position: sticky;
-    top:0px;
+    position: fixed;
+    z-index: 99;
+    justify-content:space-around
 }
 
-#navigation>div {
+#navigation>#nav_left {
     display: flex;
     align-items: center;
 }
@@ -95,7 +92,7 @@ body{
     padding-left: 20px;
 }
 
-#navigation>nav>ul {
+#navigation>div>nav>ul {
     display:flex;
     list-style: none;
     text-transform: capitalize;
@@ -103,11 +100,11 @@ body{
     padding-left: 0;
 }
 
-#navigation>nav>ul>li {
+#navigation>div>nav>ul>li {
     list-style: none;
 }
 
-#navigation>nav>ul>li>a {
+#navigation>div>nav>ul>li>a {
     text-decoration: none;
     color:#414479;
     font-size: 1.25vw;
@@ -115,7 +112,7 @@ body{
     font-family: 'Ubuntu', sans-serif;
 }
 
-#navigation>nav>ul>li>.contact {
+#navigation>div>nav>ul>li>.contact {
     color: #fbfbfb;
     background-color:#414479;
     padding:.6875rem 3.5rem;
@@ -223,8 +220,16 @@ body{
 
 #discover {
     height: 100vh;
-    display: flex;
     background: rgb(15, 15, 15);
+}
+
+#top_discover {
+    height:20vh;
+}
+
+#carousel {
+    height:80vh;
+    display: flex;
 }
 
 .photo_carousel {
