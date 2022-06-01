@@ -224,21 +224,8 @@ body{
     }
 }
 
-#discover {
-    height: 100vh;
-    background: rgb(15, 15, 15);
-}
-
-#top_discover {
-    height:20vh;
-}
-
-#top_discover>h2 {
-    margin:0;
-}
-
 #carousel {
-    height:80vh;
+    height: 100vh;
     display: flex;
 }
 
