@@ -230,6 +230,9 @@ body{
 }
 
 .photo_carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     min-width: 10%;
     max-width: 70%;
 }
@@ -256,6 +259,33 @@ body{
     background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/reculee.JPG);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.photo_carousel>div {
+    display: flex;
+    flex-direction: column;
+    padding:3.12rem;
+    background: rgba(0, 0, 0, 0.5);
+    height:16.7vh;
+    justify-content: center;
+}
+
+.title_carousel {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 3.78vh;
+    color: #FDFDFD;
+}
+
+.p_carousel {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.7vh;
+    color: #FDFDFD;
+}
+
+#carousel>div>.hiden {
+    display: none;
 }
 
 /* découvrire / carousel */
