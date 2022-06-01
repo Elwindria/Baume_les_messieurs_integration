@@ -1,6 +1,5 @@
 /* Carousel_discover version Desktop */
 
-// const activate = document.querySelector(".activate");
 const photo_carousel = document.querySelectorAll(".photo_carousel");
 const carousel_1 = document.querySelector(".carousel_1");
 const carousel_2 = document.querySelector(".carousel_2");
@@ -54,3 +53,19 @@ carousel_4.onclick = function() {
         });
     carousel_4.classList.add("activate");
 }
+
+
+
+/* Scroll fixed or relative for BarNav */
+
+const windows = DocumentFragment.windows
+const navigation = document.getElementById("navigation")
+
+window.scroll(function() {   
+    var scroll = $(window).scrollTop();
+    if (scroll >= 400) {
+        navigation.addClass("relative");
+    } else {
+        navigation.removeClass("relative");
+    }
+});

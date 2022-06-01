@@ -74,6 +74,10 @@ body{
     justify-content:space-around
 }
 
+.relative {
+    position: relative;
+}
+
 #navigation>#nav_left {
     display: flex;
     align-items: center;
