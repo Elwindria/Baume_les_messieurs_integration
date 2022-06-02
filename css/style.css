@@ -294,3 +294,12 @@ body{
 
 /* découvrire / carousel */
 /* ================================================== */
+/* corp de page */
+
+#corp_de_page {
+    height:600vh;
+    background-color: #fbfbfb;
+    background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_corps.png);
+    background-repeat: no-repeat;
+}
+/* corp de page */
