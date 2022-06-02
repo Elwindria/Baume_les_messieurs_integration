@@ -193,10 +193,11 @@ body{
     cursor: pointer;
 }
 
-.activate {
+#carousel>.activate {
     animation-duration: .5s;
     animation-name: slidein;
     width: 70%;
+    opacity: unset;
 }
 
 .last {
@@ -225,6 +226,7 @@ body{
 }
 
 #carousel {
+    background-color: #000000;
     height: 100vh;
     display: flex;
 }
@@ -235,6 +237,7 @@ body{
     justify-content: flex-end;
     min-width: 10%;
     max-width: 70%;
+    opacity: 60%;
 }
 
 .carousel_1 {
