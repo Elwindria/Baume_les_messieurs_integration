@@ -14,8 +14,11 @@ carousel_1.onclick = function() {
             element.classList.remove("last");
         }
         element.classList.remove("activate");
+        element.children[0].classList.add("hiden");
         });
     carousel_1.classList.add("activate");
+    carousel_1.children[0].classList.remove("hiden");
+
 }
 
 carousel_2.onclick = function() {
@@ -26,8 +29,11 @@ carousel_2.onclick = function() {
             element.classList.remove("last");
         }
         element.classList.remove("activate");
+        element.children[0].classList.add("hiden");
         });
     carousel_2.classList.add("activate");
+    carousel_2.children[0].classList.remove("hiden");
+
 }
 
 carousel_3.onclick = function() {
@@ -38,8 +44,11 @@ carousel_3.onclick = function() {
             element.classList.remove("last");
         }
         element.classList.remove("activate");
+        element.children[0].classList.add("hiden");
         });
     carousel_3.classList.add("activate");
+    carousel_3.children[0].classList.remove("hiden");
+
 }
 
 carousel_4.onclick = function() {
@@ -49,9 +58,11 @@ carousel_4.onclick = function() {
         } else if (element.classList.contains("last")){
             element.classList.remove("last");
         }
+        element.children[0].classList.add("hiden");
         element.classList.remove("activate");
         });
     carousel_4.classList.add("activate");
+    carousel_4.children[0].classList.remove("hiden");
 }
 
 

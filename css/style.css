@@ -273,14 +273,15 @@ body{
 .title_carousel {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 3.78vh;
+    font-size: 4.5vh;
     color: #FDFDFD;
+    margin-bottom: 10px;
 }
 
 .p_carousel {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 2.7vh;
+    font-size: 3.33vh;
     color: #FDFDFD;
 }
 
