@@ -300,14 +300,13 @@ body{
 
 #corp_de_page {
     background-color: #fbfbfb;
-    background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_corps.png);
+    background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_top_corp.png);
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .block_corp_de_page {
-    height:100vh;
-    padding: 11.12vh 5.2vw;
+    height:75vh;
+    padding: 5.5vh 5.2vw 5.5vh;
 }
 
 .block_corp_de_page>div {
@@ -319,7 +318,7 @@ body{
 }
 
 .corp_div>img {
-    height:80vh;
+    height:75vh;
     width: auto;
 }
 
@@ -328,17 +327,21 @@ body{
     justify-content: center;
 }
 
+.transition>svg{
+    width: 60vw;
+}
+
 .corp_h {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 3.78vh;
+    font-size: 3vh;
     color: #151850;
 }
 
 .corp_p {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 2.4vh;
+    font-size: 2vh;
     color: #738393;
 }
 
