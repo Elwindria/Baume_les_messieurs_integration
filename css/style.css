@@ -191,6 +191,8 @@ body{
 
 .photo_carousel:hover {
     cursor: pointer;
+    transform: scale(1.01);
+    transition-duration: 0.3s;
 }
 
 #carousel>.activate {
@@ -297,9 +299,48 @@ body{
 /* corp de page */
 
 #corp_de_page {
-    height:600vh;
     background-color: #fbfbfb;
     background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_corps.png);
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block_corp_de_page {
+    height:100vh;
+    padding: 11.12vh 5.2vw;
+}
+
+.block_corp_de_page>div {
+    display: flex;
+}
+
+.corp_div {
+    width: 50vw;
+}
+
+.transition {
+    display: flex;
+    justify-content: center;
+}
+
+.corp_h {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 3.78vh;
+    color: #151850;
+}
+
+.corp_p {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.4vh;
+    color: #738393;
+}
+
+.corp_span {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.4vh;
+    color: #151850;
 }
 /* corp de page */
