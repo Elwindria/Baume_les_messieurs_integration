@@ -318,6 +318,11 @@ body{
     width: 50vw;
 }
 
+.corp_div>img {
+    height:80vh;
+    width: auto;
+}
+
 .transition {
     display: flex;
     justify-content: center;
