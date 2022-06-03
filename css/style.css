@@ -322,14 +322,6 @@ body{
     width: auto;
 }
 
-.portal {
-    background-color: #151850;
-    border-radius: 60%;
-    height: 0.5vh;
-    width: 100%;
-    display:none;
-}
-
 .photo_right>img {
     padding-left: 5.2vw;
 }
