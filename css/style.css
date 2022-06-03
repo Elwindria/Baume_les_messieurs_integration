@@ -322,6 +322,11 @@ body{
     width: auto;
 }
 
+.photo_right {
+    display: flex;
+    justify-content: right;
+}
+
 .transition {
     display: flex;
     justify-content: center;
