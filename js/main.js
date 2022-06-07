@@ -6,19 +6,26 @@ const carousel_2 = document.querySelector(".carousel_2");
 const carousel_3 = document.querySelector(".carousel_3");
 const carousel_4 = document.querySelector(".carousel_4");
 
-carousel_1.onclick = function() {
-    photo_carousel.forEach(element => {
-        if (element.classList.contains("activate") && element.classList[1] != "carousel_1" ) {
+let activeElement
+
+const onClick = function(carousel, className) {
+    return function() {
+        photo_carousel.forEach(element => {
+        if (element.classList.contains("activate") && element.classList[1] != className ) {
             element.classList.add("last");
         } else if (element.classList.contains("last")){
             element.classList.remove("last");
         }
         element.classList.remove("activate");
-        element.children[0].classList.add("hiden");
+        element.querySelector('span').classList.add("hiden");
         });
-    carousel_1.classList.add("activate");
-    carousel_1.children[0].classList.remove("hiden");
+        carousel.classList.add("activate");
+        carousel.children[0].classList.remove("hiden");
+    }
+}
 
+carousel_1.onclick = function() {
+    onClick(carousel_1, "carousel_1");
 }
 
 carousel_2.onclick = function() {
