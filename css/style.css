@@ -356,3 +356,61 @@ body{
     color: #151850;
 }
 /* corp de page */
+/* contact */
+
+#contact_block {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #fbfbfb;
+}
+
+#contact {
+    height:45vh;
+    background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_contact.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contact>div>h4{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 5.5vh;
+    color: #FBFBFB;
+    margin:0;
+    padding: 2.22vh 6.77vw;
+}
+
+#contact_block_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5.5vw;
+}
+
+.contact_text {
+    width: 40vw;
+}
+
+.contact_text>h5{
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 3.3vh;
+    color: #FBFBFB;
+    margin:0;
+}
+
+.contact_text>p{ 
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.3vh;
+    color: #FBFBFB;
+}
+
+
+iframe{
+    height: 50vh;
+    width: 100%;
+}
+/* contact */
