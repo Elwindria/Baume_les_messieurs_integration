@@ -415,9 +415,18 @@ iframe{
 
 #line_contact {
     width: 33vw;
-    height: 0.5vh;
+    height: 0.6vh;
     background-color: #151850;
     border-radius: 25px;
     margin: auto;
 }
 /* contact */
+/* galerie photo */
+
+#galery {
+    height:100vh;
+    background-color: #fbfbfb;
+    padding: 5.56vh 0;
+    box-sizing: border-box;
+}
+/* galerie photo */
