@@ -72,21 +72,3 @@ carousel_4.onclick = function() {
     carousel_4.children[0].classList.remove("hiden");
 }
 
-
-
-/* Scroll fixed or relative for BarNav */
-
-// const navigation = document.getElementById("navigation");
-// const top_of_page = document.getElementById("top_of_page")
-// const scroll = top_of_page.offsetTop;
-
-// window.onscroll = function() {
-//     console.log(scroll)
-//     if (scroll >= 400) {
-//         navigation.addClass("relative");
-//         console.log(ok)
-//     } else {
-//         navigation.removeClass("relative");
-//     }
-// }
-
