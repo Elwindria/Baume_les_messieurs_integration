@@ -428,5 +428,21 @@ iframe{
     background-color: #fbfbfb;
     padding: 5.56vh 0;
     box-sizing: border-box;
+    display: flex;
 }
+
+.arrow {
+    width: 15%;
+    margin: 3.33vh 1.56vw;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#galery_main {
+    width: 70%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* galerie photo */
