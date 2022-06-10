@@ -275,9 +275,13 @@ body{
 
 .photo_carousel>div {
     padding:2.2vh 2.6vw ;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     height:16.7vh;
     justify-content: center;
+}
+
+.photo_carousel>div:hover {
+    animation: vanish .5s steps(200,end) forwards;
 }
 
 .title_carousel {
@@ -310,6 +314,11 @@ body{
 .typing_2 {
     animation: typing 1s steps(200,end) 0.7s forwards;
     visibility: hidden;
+}
+
+@keyframes vanish {
+    from {opacity: 1;}
+    to {opacity: 0;}
 }
 
 @keyframes typing {
