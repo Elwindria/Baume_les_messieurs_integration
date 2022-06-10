@@ -280,8 +280,8 @@ body{
     justify-content: center;
 }
 
-.photo_carousel>div:hover {
-    animation: vanish .5s steps(200,end) forwards;
+#carousel>div>.hiden {
+    display: none;
 }
 
 .title_carousel {
@@ -303,8 +303,28 @@ body{
     white-space: nowrap;
 }
 
-#carousel>div>.hiden {
-    display: none;
+.span_text_carousel {
+    color: #fbfbfb;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 4.5vh;
+    display:none;
+    animation: span_text 1s steps(200,end);
+    position: relative;
+    top: -50px;
+    left: 50px;
+}
+
+.span_text_carousel_2 {
+    color: #fbfbfb;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 4.5vh;
+    display:none;
+    animation: span_text 1s steps(200,end);
+    position: relative;
+    top: -80px;
+    left: 50px;
 }
 
 .typing_1 {
@@ -316,9 +336,18 @@ body{
     visibility: hidden;
 }
 
-@keyframes vanish {
+.typing_reverse {
+    animation: typing_reverse .3s steps(200,end) forwards;
+}
+
+@keyframes typing_reverse {
     from {opacity: 1;}
     to {opacity: 0;}
+}
+
+@keyframes span_text {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }
 
 @keyframes typing {

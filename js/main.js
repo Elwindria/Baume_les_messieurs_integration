@@ -13,7 +13,6 @@ carousel_4.onclick = function() {fctCarousel(carousel_4, "carousel_4");}
 
 function fctCarousel(carousel, className) {
     photoCarousel.forEach(element => {
-        console.log(element.classList)
             if (element.classList.contains("activate") && element.classList[1] != className ) {
                 element.classList.add("last");
             } else if (element.classList.contains("last")) {
@@ -27,6 +26,26 @@ function fctCarousel(carousel, className) {
 }
 
 /* Carousel_discover version Desktop end */
+/*Carousel_discover animation en savoir plus start */
+
+const divTextCarousel = document.querySelectorAll(".div_text_carousel");
+
+divTextCarousel.forEach(element => {
+    element.addEventListener("mouseover", function() {
+        element.children[0].classList.add("typing_reverse");
+        element.children[1].classList.add("typing_reverse");
+        element.children[2].classList.add("typing_reverse");
+        element.children[3].style.display = ("unset");
+    })
+    element.addEventListener("mouseout", function() {
+        element.children[0].classList.remove("typing_reverse");
+        element.children[1].classList.remove("typing_reverse");
+        element.children[2].classList.remove("typing_reverse");
+        element.children[3].style.display = ("none");
+    })
+});
+
+/*Carousel_discover animation en savoir plus end */
 /*Galerie Photo start */
 
 const arrowLeft = document.getElementById("galery_left");
