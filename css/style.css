@@ -109,15 +109,18 @@ body{
 }
 
 .chapelle {
+    animation: chapelle_slide_top 1s steps(200,end) forwards;
     width: 11.7vw;
 }
+
+@keyframes chapelle_slide_top { from {height: 0vh;} to {height: 45vh;}}
 
 #main_title>h1 {
     display: flex;
     align-items: flex-end;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 4.16vw;
+    font-size: 8.9vh;
     text-transform: uppercase;
     color: #FBFBFB;
     text-shadow: 0px 4px 25px #000000;
@@ -214,25 +217,9 @@ body{
     animation-name: slideout;
 }
 
-@keyframes slidein {
-    from {
-      width: 10%;
-    } 
+@keyframes slidein { from {width: 10%;} to {width: 70%;}}
 
-    to {
-        width: 70%;
-    }
-}
-
-@keyframes slideout {
-    from {
-      width: 70%;
-    } 
-
-    to {
-        width: 10%;
-    }
-}
+@keyframes slideout { from {width: 70%;} to {width: 10%;}}
 
 #carousel {
     background-color: #000000;
