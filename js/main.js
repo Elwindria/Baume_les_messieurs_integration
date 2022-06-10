@@ -72,5 +72,16 @@ function fctGaleriePhoto(moreOrLess) {
     arrowRight.style.backgroundImage = "url('/Github/Baume_les_messieurs_website/images/galery_photo/galery_"+y+".jpg')";
 } 
 
+/* arrow_galerie_photo start */
+
+const imgArrowLeft = document.querySelector(".img_arrow_left");
+const imgArrowRight = document.querySelector(".img_arrow_right");
+
+arrowLeft.addEventListener("mouseover", function() {imgArrowLeft.style.display = ("unset");})
+arrowLeft.addEventListener("mouseout", function() {imgArrowLeft.style.display = ("none");})
+arrowRight.addEventListener("mouseover", function() {imgArrowRight.style.display = ("unset");})
+arrowRight.addEventListener("mouseout", function() {imgArrowRight.style.display = ("none");})
+
+/* arrow_galerie_photo end */
 /*Galerie Photo end */
 

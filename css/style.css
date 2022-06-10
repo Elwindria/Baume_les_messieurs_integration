@@ -501,6 +501,14 @@ iframe{
     transform: scale(1.005);
 }
 
+.img_arrow {
+    padding-top: 35.2vh;
+    display: none;
+    animation: img_arrow_pop .3s steps(40,end);
+}
+
+@keyframes img_arrow_pop { from {opacity: 0;} to {opacity: 1;} }
+
 #galery_main {
     width: 70%;
     background-repeat: no-repeat;
