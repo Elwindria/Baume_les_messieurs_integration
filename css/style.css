@@ -291,7 +291,7 @@ body{
     color: #FDFDFD;
     margin:0 0 1.6vh 0;
     white-space: nowrap;
-    animation: typing 3s steps(200,end);
+    animation: typing 2s steps(200,end);
 }
 
 .p_carousel {
@@ -323,16 +323,16 @@ body{
     display:none;
     animation: span_text 1s steps(200,end);
     position: relative;
-    top: -80px;
+    top: -90px;
     left: 50px;
 }
 
 .typing_1 {
-    animation: typing 1.3s steps(200,end);
+    animation: typing 0.7s steps(200,end);
 }
 
 .typing_2 {
-    animation: typing 1s steps(200,end) 0.7s forwards;
+    animation: typing 0.7s steps(200,end) .5s forwards;
     visibility: hidden;
 }
 
