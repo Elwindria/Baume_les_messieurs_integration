@@ -14,6 +14,12 @@ body{
     height: 100vh;
 }
 
+/* scroll */
+
+/* scroll-behavior : smooth; */
+
+/* scroll */
+
 /* ============================================ */
 /* Nav */
 
@@ -191,7 +197,7 @@ body{
 
 .photo_carousel:hover {
     cursor: pointer;
-    transform: scale(1.007);
+    transform: scale(1.015);
     transition-duration: 0.3s;
 }
 
@@ -200,6 +206,7 @@ body{
     animation-name: slidein;
     width: 70%;
     opacity: unset;
+    transform: unset;
 }
 
 .last {
