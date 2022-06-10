@@ -267,9 +267,7 @@ body{
 }
 
 .photo_carousel>div {
-    display: flex;
-    flex-direction: column;
-    padding:3.12rem;
+    padding:2.2vh 2.6vw ;
     background: rgba(0, 0, 0, 0.5);
     height:16.7vh;
     justify-content: center;
@@ -280,7 +278,9 @@ body{
     font-weight: 700;
     font-size: 4.5vh;
     color: #FDFDFD;
-    margin-bottom: 10px;
+    margin:0 0 1.6vh 0;
+    white-space: nowrap;
+    animation: typing 3s steps(200,end);
 }
 
 .p_carousel {
@@ -288,11 +288,32 @@ body{
     font-weight: 700;
     font-size: 3.33vh;
     color: #FDFDFD;
+    margin:0;
+    white-space: nowrap;
 }
 
 #carousel>div>.hiden {
     display: none;
 }
+
+.typing_1 {
+    animation: typing 1.3s steps(200,end);
+}
+
+.typing_2 {
+    animation: typing 1s steps(200,end) 0.7s forwards;
+    visibility: hidden;
+}
+
+@keyframes typing {
+    from { width: 0;
+    visibility: visible;
+    overflow: hidden;}
+    to { width: 100%;
+    overflow: unset;
+    visibility: visible;}
+  }
+
 
 /* découvrire / carousel */
 /* ================================================== */
@@ -355,6 +376,7 @@ body{
     font-size: 2vh;
     color: #151850;
 }
+
 /* main_container */
 /* contact */
 
