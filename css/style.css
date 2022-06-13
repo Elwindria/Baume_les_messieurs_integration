@@ -8,12 +8,9 @@ body{
     max-width: 1920px;
 }
 
-#test {
-    background-color: blue;
-    width: 100vw;
-    height: 100vh;
+html{
+    scroll-behavior:smooth;
 }
-
 /* scroll */
 
 /* scroll-behavior : smooth; */
@@ -296,7 +293,7 @@ body{
     font-weight: 700;
     font-size: 4.5vh;
     display:none;
-    animation: span_text 1s steps(200,end);
+    animation: span_text .7s steps(200,end);
     position: relative;
     top: -50px;
     left: 50px;
@@ -308,7 +305,7 @@ body{
     font-weight: 700;
     font-size: 4.5vh;
     display:none;
-    animation: span_text 1s steps(200,end);
+    animation: span_text .7s steps(200,end);
     position: relative;
     top: -90px;
     left: 50px;
