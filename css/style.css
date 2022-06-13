@@ -8,9 +8,19 @@ body{
     max-width: 1920px;
 }
 
+.scroll_snap {
+    scroll-snap-align: start;
+}
+
+.scroll_snap_end {
+    scroll-snap-align: end;
+}
+
 html{
     scroll-behavior:smooth;
+    scroll-snap-type: y mandatory;
 }
+
 /* scroll */
 
 /* scroll-behavior : smooth; */
