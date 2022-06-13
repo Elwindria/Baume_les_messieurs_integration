@@ -75,9 +75,10 @@ html{
 
 #header {
     height: 100vh;
+    width: 100vw;
     background-image: url(/Github/Baume_les_messieurs_website/images/autre_2.JPG);
     background-size: cover;
-    position:sticky;
+    position:fixed;
     top:0px;
     z-index: -1;
 }
@@ -136,6 +137,7 @@ html{
     display: flex;
     padding: 0 100px;
     background-color: #FBFBFB;
+    margin-top: 100vh;
 }
 
 #top_left {
@@ -505,3 +507,53 @@ iframe{
 }
 
 /* galerie photo */
+/* footer start */
+
+#footer {
+    height: 72.3vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_footer.png);
+}
+
+#nav_footer {
+    display: flex;
+    padding: 3vh 5.2vw 0 5.2vw;
+    align-items: center;
+}
+
+#nav_footer > h5 {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 3.8vh;
+    text-align: center;
+    color: #414479;
+    text-transform: uppercase;
+}
+
+.logo_baume_nav_footer {
+    width: 4vw;
+    padding-left: 22.5vw;
+    padding-right: 26vw;
+}
+
+#div_logo {
+    display: flex;
+    gap:30px;
+}
+
+.logo {
+    width: 3.64vw;
+    height: 7.78vw;
+}
+
+#line_3 {
+    width: 89vw;
+    height: .55vh;
+    background: #414479;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+
+/* footer end */
