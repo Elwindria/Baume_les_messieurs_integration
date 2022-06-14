@@ -86,6 +86,13 @@ arrowRight.addEventListener("mouseout", function() {imgArrowRight.style.display 
 /*Galerie Photo end */
 
 /* All scroll */
+/*scroll first page */
+
+const titleHeader = document.querySelector("#title_header");
+const topOfPage = document.getElementById("top_of_page");
+
+titleHeader.onclick = function() { topOfPage.scrollIntoView({ behavior: 'smooth' })}
+
 /*scroll discover_carousel */
 
 const divTextCarousel1 = document.querySelector(".div_text_carousel_1");
@@ -103,3 +110,5 @@ divTextCarousel1.onclick = function() { abbaye.scrollIntoView({ behavior: 'smoot
 divTextCarousel2.onclick = function() { grotte.scrollIntoView({ behavior: 'smooth' })}
 divTextCarousel3.onclick = function() { cascade.scrollIntoView({ behavior: 'smooth' })}
 divTextCarousel4.onclick = function() { reculee.scrollIntoView({ behavior: 'smooth', block: 'end'})}
+
+/*scroll discover_carousel */
