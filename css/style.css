@@ -76,7 +76,7 @@ html{
 #header {
     height: 100vh;
     width: 100vw;
-    background-image: url(/Github/Baume_les_messieurs_website/images/autre_2.JPG);
+    background-image: url(/Github/Baume_les_messieurs_website/images/autre_2.webp);
     background-size: cover;
     position:fixed;
     top:0px;
@@ -228,25 +228,25 @@ html{
 }
 
 .carousel_1 {
-    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/abbaye.jpg);
+    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/abbaye.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .carousel_2 {
-    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/grotte.jpg);
+    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/grotte.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .carousel_3 {
-    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/cascade.JPG);
+    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/cascade.webp);
     background-repeat: no-repeat;
     background-size:cover;
 }
 
 .carousel_4 {
-    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/reculee.JPG);
+    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/reculee.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -289,8 +289,8 @@ html{
     display:none;
     animation: span_text .7s steps(200,end);
     position: relative;
-    top: -50px;
-    left: 50px;
+    top: -5.56vh;
+    left: 2.6vw;
 }
 
 .span_text_carousel_2 {
@@ -301,8 +301,8 @@ html{
     display:none;
     animation: span_text .7s steps(200,end);
     position: relative;
-    top: -90px;
-    left: 50px;
+    top: -10vh;
+    left: 2.6vw;
 }
 
 .typing_1 {
@@ -362,8 +362,8 @@ html{
 }
 
 .main_container_div>img {
-    height:75vh;
-    width: auto;
+    height:auto;
+    width: 37vw;
 }
 
 .photo_right>img {
@@ -510,7 +510,6 @@ iframe{
 /* footer start */
 
 #footer {
-    height: 72.3vh;
     display: flex;
     flex-direction: column;
     background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_footer.png);
@@ -547,6 +546,10 @@ iframe{
     height: 7.78vw;
 }
 
+.logo > svg {
+    cursor: pointer;
+}
+
 #line_3 {
     width: 89vw;
     height: .55vh;
@@ -554,6 +557,7 @@ iframe{
     border-radius: 20px;
     margin: 0 auto;
 }
+
 
 
 

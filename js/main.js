@@ -53,7 +53,7 @@ const arrowRight = document.getElementById("galery_right");
 const galeryMain = document.getElementById("galery_main");
 let x = 1; let p = 2; let y = 3;
 
-let nbr_max_photo = 5;
+let nbr_max_photo = 6;
 
 arrowLeft.onclick = function() {fctGaleriePhoto(-1);}
 arrowRight.onclick = function() {fctGaleriePhoto(+1);}
@@ -67,9 +67,9 @@ function fctGaleriePhoto(moreOrLess) {
     if (p == 0){ p = nbr_max_photo;} else if (p == nbr_max_photo+1) {p = 1;};
     if (y == 0){ y = nbr_max_photo;} else if (y == nbr_max_photo+1) {y = 1;};
 
-    arrowLeft.style.backgroundImage = "url('/Github/Baume_les_messieurs_website/images/galery_photo/galery_"+x+".jpg')";
-    galeryMain.style.backgroundImage = "url('/Github/Baume_les_messieurs_website/images/galery_photo/galery_"+p+".jpg')";
-    arrowRight.style.backgroundImage = "url('/Github/Baume_les_messieurs_website/images/galery_photo/galery_"+y+".jpg')";
+    arrowLeft.style.backgroundImage = "url('/Github/Baume_les_messieurs_website/images/galery_photo/galery_"+x+".webp')";
+    galeryMain.style.backgroundImage = "url('/Github/Baume_les_messieurs_website/images/galery_photo/galery_"+p+".webp')";
+    arrowRight.style.backgroundImage = "url('/Github/Baume_les_messieurs_website/images/galery_photo/galery_"+y+".webp')";
 } 
 
 /* arrow_galerie_photo start */
