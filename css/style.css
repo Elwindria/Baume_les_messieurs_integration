@@ -513,6 +513,8 @@ iframe{
     display: flex;
     flex-direction: column;
     background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_footer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #nav_footer {
