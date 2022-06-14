@@ -86,14 +86,6 @@ arrowRight.addEventListener("mouseout", function() {imgArrowRight.style.display 
 /*Galerie Photo end */
 
 /* All scroll */
-/*scroll first page */
-
-const titleHeader = document.querySelector("#title_header");
-const topOfPage = document.getElementById("top_of_page");
-
-titleHeader.onclick = function() { topOfPage.scrollIntoView({ behavior: 'smooth' })}
-
-/*scroll first page */
 /*scroll discover_carousel */
 
 const divTextCarousel1 = document.querySelector(".div_text_carousel_1");
@@ -113,3 +105,29 @@ divTextCarousel3.onclick = function() { cascade.scrollIntoView({ behavior: 'smoo
 divTextCarousel4.onclick = function() { reculee.scrollIntoView({ behavior: 'smooth', block: 'end'})}
 
 /*scroll discover_carousel */
+/* all scroll end */
+
+/* NavBar aparition */
+
+const header = document.querySelector("#header");
+const navBar = document.querySelector("#navigation");
+
+
+window.addEventListener('scroll', function() {
+    let scrollY = this.scrollY;
+
+    if (scrollY > header.clientHeight ){
+        navBar.style.background = "rgb(251, 251, 251)";
+        navBar.classList.add("nav_bar_opacity_out");
+        navBar.classList.remove("nav_bar_opacity_in");
+    } else {
+        navBar.style.background = "rgba(251, 251, 251, 0.5";
+        navBar.classList.add("nav_bar_opacity_in");
+        navBar.classList.remove("nav_bar_opacity_out");
+    }
+})
+
+navBar.addEventListener("mouseover", function() {navBar.classList.add("nav_bar_opacity_in");navBar.classList.remove("nav_bar_opacity_out");})
+navBar.addEventListener("mouseout", function() {navBar.classList.add("nav_bar_opacity_out");navBar.classList.remove("nav_bar_opacity_in");})
+
+/* NavBar aparition */

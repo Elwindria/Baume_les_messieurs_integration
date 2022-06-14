@@ -30,6 +30,17 @@ html{
     justify-content:space-around;
 }
 
+.nav_bar_opacity_in {
+    animation: opacity_in .3s steps(200,end) forwards;
+}
+
+.nav_bar_opacity_out {
+    animation: opacity_out .7s steps(200,end) forwards;
+}
+
+@keyframes opacity_out { from {opacity: 1;} to {opacity: 0; display:none;}}
+@keyframes opacity_in { from {opacity: 0; display:unset;} to {opacity: 1;}}
+
 #navigation>#nav_left {
     display: flex;
     align-items: center;
