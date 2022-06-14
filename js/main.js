@@ -93,6 +93,7 @@ const topOfPage = document.getElementById("top_of_page");
 
 titleHeader.onclick = function() { topOfPage.scrollIntoView({ behavior: 'smooth' })}
 
+/*scroll first page */
 /*scroll discover_carousel */
 
 const divTextCarousel1 = document.querySelector(".div_text_carousel_1");

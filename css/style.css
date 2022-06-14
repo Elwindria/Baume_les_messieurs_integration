@@ -15,6 +15,13 @@ html{
 /* ============================================ */
 /* Nav */
 
+#fixed_nav {
+    width: 100vw;
+    position: fixed;
+    top:0px;
+    z-index: 99;
+}
+
 #navigation {
     background: rgba(251, 251, 251, 0.5);
     height: 11.12vh;
@@ -75,10 +82,9 @@ html{
 
 #header {
     height: 100vh;
-    width: 100vw;
     background-image: url(/Github/Baume_les_messieurs_website/images/autre_2.webp);
     background-size: cover;
-    position:fixed;
+    position:sticky;
     top:0px;
     z-index: -1;
 }
@@ -138,7 +144,7 @@ html{
     display: flex;
     padding: 0 100px;
     background-color: #FBFBFB;
-    margin-top: 100vh;
+    /* margin-top: 100vh; */
 }
 
 #top_left {
@@ -552,6 +558,7 @@ iframe{
 .logo {
     width: 3.64vw;
     height: 7.78vw;
+    cursor: pointer;
 }
 
 .logo > svg {
@@ -616,6 +623,7 @@ iframe{
     border-radius: 50px;
     padding: 1vh 2.5vw;
     border: none;
+    cursor: pointer;
 }
 
 #main_footer > p {
