@@ -134,6 +134,14 @@ window.addEventListener('scroll', function() {
     }
 })
 
-    navBar.addEventListener("mouseover", function() {navBar.classList.add("nav_bar_opacity_in");navBar.classList.remove("nav_bar_opacity_out");})
-    navBar.addEventListener("mouseout", function() {navBar.classList.add("nav_bar_opacity_out");navBar.classList.remove("nav_bar_opacity_in");})
+navBar.addEventListener("mouseover", function() {navBar.classList.add("nav_bar_opacity_in");navBar.classList.remove("nav_bar_opacity_out");})
+
+navBar.addEventListener("mouseout", function() {
+    let scrollY = window.scrollY;
+
+    if (scrollY > header.clientHeight ){
+        navBar.classList.add("nav_bar_opacity_out");
+        navBar.classList.remove("nav_bar_opacity_in");
+    }
+})
 /* NavBar aparition */
