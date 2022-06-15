@@ -114,7 +114,7 @@ html{
 
 #header {
     height: 100vh;
-    background-image: url(/Github/Baume_les_messieurs_website/images/autre_2.webp);
+    background-image: url(/github/baume_les_messieurs_integration/images/autre_2.webp);
     background-size: cover;
     position:sticky;
     top:0px;
@@ -266,25 +266,25 @@ html{
 }
 
 .carousel_1 {
-    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/abbaye.webp);
+    background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/abbaye.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .carousel_2 {
-    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/grotte.webp);
+    background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/grotte.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .carousel_3 {
-    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/cascade.webp);
+    background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/cascade.webp);
     background-repeat: no-repeat;
     background-size:cover;
 }
 
 .carousel_4 {
-    background-image: url(/Github/Baume_les_messieurs_website/images/carousel_discover/reculee.webp);
+    background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/reculee.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -382,7 +382,7 @@ html{
 
 #main_container {
     background-color: #fbfbfb;
-    background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_top_corp.png);
+    background-image: url("/github/baume_les_messieurs_integration/images/website/desktop_fond_top_corp.png");
     background-repeat: no-repeat;
 }
 
@@ -451,7 +451,7 @@ html{
 
 #contact {
     height:45vh;
-    background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_contact.png);
+    background-image: url(/github/baume_les_messieurs_integration/images/website/desktop_fond_contact.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -550,7 +550,7 @@ iframe{
 #footer {
     display: flex;
     flex-direction: column;
-    background-image: url(/Github/Baume_les_messieurs_website/images/website/desktop_fond_footer.png);
+    background-image: url(/github/baume_les_messieurs_integration/images/website/desktop_fond_footer.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

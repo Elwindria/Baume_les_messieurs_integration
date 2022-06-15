@@ -67,9 +67,9 @@ function fctGaleriePhoto(moreOrLess) {
     if (p == 0){ p = nbr_max_photo;} else if (p == nbr_max_photo+1) {p = 1;};
     if (y == 0){ y = nbr_max_photo;} else if (y == nbr_max_photo+1) {y = 1;};
 
-    arrowLeft.style.backgroundImage = "url('/Github/Baume_les_messieurs_website/images/galery_photo/galery_"+x+".webp')";
-    galeryMain.style.backgroundImage = "url('/Github/Baume_les_messieurs_website/images/galery_photo/galery_"+p+".webp')";
-    arrowRight.style.backgroundImage = "url('/Github/Baume_les_messieurs_website/images/galery_photo/galery_"+y+".webp')";
+    arrowLeft.style.backgroundImage = "url('/github/baume_les_messieurs_integration/images/galery_photo/galery_"+x+".webp')";
+    galeryMain.style.backgroundImage = "url('/github/baume_les_messieurs_integration/images/galery_photo/galery_"+p+".webp')";
+    arrowRight.style.backgroundImage = "url('/github/baume_les_messieurs_integration/images/galery_photo/galery_"+y+".webp')";
 } 
 
 /* arrow_galerie_photo start */
