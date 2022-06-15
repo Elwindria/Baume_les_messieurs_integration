@@ -129,7 +129,7 @@ html{
     align-items: flex-end;
     font-family: 'Montserrat';
     font-weight: 600;
-    font-size: 8.9vh;
+    font-size: 5vw;
     text-transform: uppercase;
     color: #FBFBFB;
     text-shadow: 0px 4px 25px #000000;
@@ -167,21 +167,21 @@ html{
 #top_left>h1 {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 7.77vh;
+    font-size: 3.6458vw;
     color: #151850;
 }
 
 #top_left>h2 {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 5.56vh;
+    font-size: 2.6042vw;
     color: #151850;
 }
 
 #top_left>p {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 2.7vh;
+    font-size: 1.25vw;
     color: #445668;
 }
 
@@ -284,7 +284,7 @@ html{
 .title_carousel {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 4.5vh;
+    font-size: 2.0833vw;
     color: #FDFDFD;
     margin:0 0 1.6vh 0;
     white-space: nowrap;
@@ -294,7 +294,7 @@ html{
 .p_carousel {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 3.33vh;
+    font-size: 1.5625vw;
     color: #FDFDFD;
     margin:0;
     white-space: nowrap;
@@ -304,7 +304,7 @@ html{
     color: #fbfbfb;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 4.5vh;
+    font-size: 2.0833vw;
     display:none;
     animation: span_text .7s steps(200,end);
     position: relative;
@@ -316,7 +316,7 @@ html{
     color: #fbfbfb;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 4.5vh;
+    font-size: 2.0833vw;
     display:none;
     animation: span_text .7s steps(200,end);
     position: relative;
@@ -401,21 +401,21 @@ html{
 .main_container_h {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 3vh;
+    font-size: 1.4063vw;
     color: #151850;
 }
 
 .main_container_p {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 2vh;
+    font-size: .9375vw;
     color: #738393;
 }
 
 .main_container_span {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 2vh;
+    font-size: .9375vw;
     color: #151850;
 }
 
@@ -440,7 +440,7 @@ html{
 #contact>div>h4{
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 5.5vh;
+    font-size: 2.6042vw;
     color: #FBFBFB;
     margin:0;
     padding: 2.22vh 6.77vw;
@@ -460,7 +460,7 @@ html{
 .contact_text>h5{
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 3.3vh;
+    font-size: 1.5625vw;
     color: #FBFBFB;
     margin:0;
 }
@@ -468,7 +468,7 @@ html{
 .contact_text>p{ 
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 2.3vh;
+    font-size: 1.0417vw;
     color: #FBFBFB;
 }
 
@@ -551,7 +551,7 @@ iframe{
 #title_nav_footer > h5 {
     font-family: 'Ubuntu';
     font-weight: 700;
-    font-size: 3.8vh;
+    font-size: 1.8229vw;
     text-align: center;
     color: #414479;
     text-transform: uppercase;
@@ -595,7 +595,7 @@ iframe{
 #newsletter > h5 {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 3.8vh;
+    font-size: 1.8229vw;
     color: #414479;
 }
 
@@ -610,7 +610,7 @@ iframe{
     border: 3px solid #414479;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 2.7vh;
+    font-size: 1.25vw;
     color: #738393;
     text-align:start;
     text-indent: 2vw;
@@ -619,7 +619,7 @@ iframe{
 #input_email::placeholder {
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 2.7vh;
+    font-size: 1.25vw;
     color: #738393;
     text-align: start;
     text-indent: 1.875rem;
@@ -628,7 +628,7 @@ iframe{
 #btn_mail {
     font-family: 'Ubuntu';
     font-weight: 700;
-    font-size: 3.6vh;
+    font-size: 1.6667vw;
     text-align: center;
     color: #FBFBFB;
     background: #414479;
@@ -643,7 +643,7 @@ iframe{
     text-align: center;
     font-family: 'Montserrat';
     font-weight: 700;
-    font-size: 2.5vh;
+    font-size: 1.1458vw;
     color: #738393;
     padding-top: 7vh;
     padding-bottom: 4vh;
