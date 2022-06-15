@@ -24,7 +24,7 @@ html{
 
 #navigation {
     background: rgba(251, 251, 251, 0.5);
-    height: 11.12vh;
+    height: 5.2083vw;
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -64,7 +64,7 @@ html{
     display:flex;
     list-style: none;
     text-transform: capitalize;
-    gap:6.25rem;
+    gap: 5.2083vw;
     padding-left: 0;
 }
 
@@ -82,9 +82,29 @@ html{
 
 #navigation>div>nav>ul>li>.contact {
     color: #fbfbfb;
+    border: 3px solid #414479;
     background-color:#414479;
-    padding:.6875rem 3.5rem;
+    padding: .5729vw 2.9167vw;
     border-radius: 30px;
+}
+
+#btn_discover_nav_bar {
+    padding-left: 1.0417vw;
+}
+
+#nav_discover {
+    position: absolute;
+    top: 5.2083vw;
+    background-color: rgba(251, 251, 251, 0.5);
+    padding: .7vw;
+}
+
+#nav_right > #nav_discover > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    margin: 0;
+    text-align: center;
 }
 
 
@@ -102,19 +122,19 @@ html{
 }
 
 #header_logo {
-    padding-left: 6.25rem;
+    padding-left: 5.2083vw;
 }
 
 #main_title {
     display: flex;
-    height:calc(100vh - 11.25rem)
+    height:calc(100vh - 5.2083vw)
 }
 
 /* Logo Chapelle */
 #main_title>div {
     display: flex;
     align-items: flex-end;
-    padding-left: 6.25rem;
+    padding-left: 5.2083vw;
 }
 
 .chapelle {
@@ -133,17 +153,17 @@ html{
     text-transform: uppercase;
     color: #FBFBFB;
     text-shadow: 0px 4px 25px #000000;
-    padding-left: 5rem;
+    padding-left: 4.1667vw;
     margin:0;
     cursor: pointer;
 }
 
 #trait_1 {
     background-color: #FBFBFB;
-    height:.5rem;
+    height: .4167vw;
     width: 78.125vw;
-    margin-bottom:5rem;
-    margin-top: 1.875rem;
+    margin-bottom: 4.1667vw;
+    margin-top: 1.5625vw;
     border-radius: 25px;
 }
 
@@ -156,7 +176,6 @@ html{
     display: flex;
     padding: 0 100px;
     background-color: #FBFBFB;
-    /* margin-top: 100vh; */
 }
 
 #top_left {
@@ -189,7 +208,7 @@ html{
     background-color: #414479;
     width: 70%;
     height: 5px;
-    border-radius: 1.5625rem;
+    border-radius: 25px;
     margin:auto;
     margin-top: 50px;
 }
@@ -271,9 +290,9 @@ html{
 }
 
 .photo_carousel>div {
-    padding:2.2vh 2.6vw ;
+    padding: 1.0417vw 2.6vw ;
     background: rgba(0, 0, 0, 0.8);
-    height:16.7vh;
+    height: 7.8125vw;
     justify-content: center;
 }
 
@@ -286,7 +305,7 @@ html{
     font-weight: 700;
     font-size: 2.0833vw;
     color: #FDFDFD;
-    margin:0 0 1.6vh 0;
+    margin:0 0 .7813vw 0;
     white-space: nowrap;
     animation: typing 2s steps(200,end);
 }
@@ -308,7 +327,7 @@ html{
     display:none;
     animation: span_text .7s steps(200,end);
     position: relative;
-    top: -5.56vh;
+    top: -2.6042vw;
     left: 2.6vw;
 }
 
@@ -320,7 +339,7 @@ html{
     display:none;
     animation: span_text .7s steps(200,end);
     position: relative;
-    top: -10vh;
+    top: -4.6875vw;
     left: 2.6vw;
 }
 
@@ -369,7 +388,7 @@ html{
 
 .block_main_container {
     height:75vh;
-    padding: 5.5vh 5.2vw 5.5vh;
+    padding: 2.6042vw 2.4479vw 2.6042vw;
 }
 
 .block_main_container>div {
@@ -443,7 +462,7 @@ html{
     font-size: 2.6042vw;
     color: #FBFBFB;
     margin:0;
-    padding: 2.22vh 6.77vw;
+    padding: 1.0417vw 6.77vw;
 }
 
 #contact_block_text {
@@ -479,7 +498,7 @@ iframe{
 
 #line_contact {
     width: 33vw;
-    height: 0.6vh;
+    height: .2604vw;
     background-color: #151850;
     border-radius: 25px;
     margin: auto;
@@ -490,14 +509,14 @@ iframe{
 #galery {
     height:100vh;
     background-color: #fbfbfb;
-    padding: 5.56vh 0;
+    padding: 2.6042vw 0;
     box-sizing: border-box;
     display: flex;
 }
 
 .arrow {
     width: 15%;
-    margin: 3.33vh 1.56vw;
+    margin: 1.7188vw 1.56vw;
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
@@ -512,7 +531,7 @@ iframe{
 }
 
 .img_arrow {
-    padding-top: 35.2vh;
+    padding-top: 16.4583vw;
     display: none;
     animation: img_arrow_pop .3s steps(40,end);
 }
@@ -538,7 +557,7 @@ iframe{
 
 #nav_footer {
     display: flex;
-    padding: 3vh 5.2vw 0 5.2vw;
+    padding: 1.4063vw 5.2vw 0 5.2vw;
     align-items: center;
     justify-content: center;
     justify-content: space-between;
@@ -570,7 +589,6 @@ iframe{
 .logo {
     width: 3.64vw;
     height: 7.78vw;
-    cursor: pointer;
 }
 
 .logo > svg {
@@ -579,7 +597,7 @@ iframe{
 
 #line_3 {
     width: 89vw;
-    height: .55vh;
+    height: .2604vw;
     background: #414479;
     border-radius: 20px;
     margin: 0 auto;
@@ -605,7 +623,7 @@ iframe{
 }
 
 #input_email {
-    padding: .9vh 25vw .9vh 0;
+    padding: .4167vw 25vw .4167vw 0;
     border-radius: 25px;
     border: 3px solid #414479;
     font-family: 'Montserrat';
@@ -622,7 +640,7 @@ iframe{
     font-size: 1.25vw;
     color: #738393;
     text-align: start;
-    text-indent: 1.875rem;
+    text-indent: 1.5625vw;
 }
 
 #btn_mail {
@@ -633,8 +651,8 @@ iframe{
     color: #FBFBFB;
     background: #414479;
     border-radius: 50px;
-    padding: 1vh 2.5vw;
-    border: none;
+    padding: .3646vw 2.5vw;
+    border: 2px solid #414479;
     cursor: pointer;
 }
 
@@ -645,8 +663,31 @@ iframe{
     font-weight: 700;
     font-size: 1.1458vw;
     color: #738393;
-    padding-top: 7vh;
-    padding-bottom: 4vh;
+    padding-top: 3.2813vw;
+    padding-bottom: 1.875vw;
 }
 
 /* footer end */
+/* All hover start */
+
+#navigation>#nav_right>nav>ul>li>a:hover {
+    color: #151850;
+}
+
+#navigation>#nav_right>nav>ul>li>.contact:hover {
+    color: #151850;
+    background-color: #fbfbfb;
+    border: 3px solid #151850;
+}
+
+.logo:hover {
+    fill: #151850;
+}
+
+#btn_mail:hover {
+    color: #151850;
+    background-color: #fbfbfb;
+    border: 2px solid #151850;
+}
+
+/* All hover end */

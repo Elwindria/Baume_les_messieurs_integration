@@ -115,20 +115,23 @@ divTextCarousel4.onclick = function() { reculee.scrollIntoView({ behavior: 'smoo
 /*scroll discover_carousel */
 /* all scroll end */
 
-/* NavBar aparition */
+/* NavBar apparition */
 
 const header = document.querySelector("#header");
 const navBar = document.querySelector("#navigation");
+const navDiscover = document.querySelector("#nav_discover");
 
 window.addEventListener('scroll', function() {
     let scrollY = this.scrollY;
 
     if (scrollY > header.clientHeight ){
         navBar.style.background = "rgb(251, 251, 251)";
+        navDiscover.style.background = "rgb(251, 251, 251)";
         navBar.classList.add("nav_bar_opacity_out");
         navBar.classList.remove("nav_bar_opacity_in");
     } else {
         navBar.style.background = "rgba(251, 251, 251, 0.5";
+        navDiscover.style.background = "rgba(251, 251, 251, 0.5";
         navBar.classList.add("nav_bar_opacity_in");
         navBar.classList.remove("nav_bar_opacity_out");
     }
@@ -144,4 +147,9 @@ navBar.addEventListener("mouseout", function() {
         navBar.classList.remove("nav_bar_opacity_in");
     }
 })
-/* NavBar aparition */
+/* NavBar apparition */
+/* NavDiscover Apparition */
+
+
+
+/* navDiscover Apparition */
