@@ -629,7 +629,6 @@ iframe{
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.25vw;
-    color: #738393;
     text-align:start;
     text-indent: 2vw;
 }
@@ -651,7 +650,7 @@ iframe{
     color: #FBFBFB;
     background: #414479;
     border-radius: 50px;
-    padding: .3646vw 2.5vw;
+    padding: .5208vw 2.5vw;
     border: 2px solid #414479;
     cursor: pointer;
 }
