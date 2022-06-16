@@ -121,23 +121,32 @@ btnNavBarReculee.onclick = function() { reculee.scrollIntoView({ behavior: 'smoo
 const header = document.querySelector("#header");
 const navBar = document.querySelector("#navigation");
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll',() => {
+  
     let scrollY = this.scrollY;
-
-    if (scrollY > header.clientHeight ){
-        // navBar.style.background = "rgb(251, 251, 251)";
-        // navDiscover.style.background = "rgb(251, 251, 251)";
+    if(scrollY > header.clientHeight ){
         navBar.classList.add("nav_bar_opacity_out");
         navBar.classList.remove("nav_bar_opacity_in");
-    } else {
-        // navBar.style.background = "rgba(251, 251, 251, 0.5";
-        // navDiscover.style.background = "rgba(251, 251, 251, 0.5";
+    }else {
         navBar.classList.add("nav_bar_opacity_in");
         navBar.classList.remove("nav_bar_opacity_out");
     }
 })
 
-navBar.addEventListener("mouseover", function() {navBar.classList.add("nav_bar_opacity_in");navBar.classList.remove("nav_bar_opacity_out");})
+// window.addEventListener("mousein",(e)=>{
+//     if(e.target !== navBar && scrollY > header.clientHeight ){
+//         navBar.classList.add("nav_bar_opacity_out");
+//         navBar.classList.remove("nav_bar_opacity_in");
+//     }else {
+//         navBar.classList.add("nav_bar_opacity_in");
+//         navBar.classList.remove("nav_bar_opacity_out");
+//     }
+// })
+
+navBar.addEventListener("mouseover", function() {
+    navBar.classList.add("nav_bar_opacity_in");
+    navBar.classList.remove("nav_bar_opacity_out");
+})
 
 navBar.addEventListener("mouseout", function() {
     let scrollY = window.scrollY;
@@ -147,6 +156,7 @@ navBar.addEventListener("mouseout", function() {
         navBar.classList.remove("nav_bar_opacity_in");
     }
 })
+
 /* NavBar apparition */
 /* NavDiscover Apparition */
 

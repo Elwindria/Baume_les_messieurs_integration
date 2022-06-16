@@ -27,7 +27,8 @@ html{
     height: 5.2083vw;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
+    padding: 0 5.2083vw;
 }
 
 .nav_bar_opacity_in {
@@ -91,7 +92,7 @@ html{
 #nav_discover {
     position: absolute;
     top: 1.8229vw;
-    right: 40.625vw;
+    right: 32.8125vw;
     background-color: rgba(251, 251, 251);
     padding: 0 1.0417vw 1.0417vw 1.0417vw; 
     width: 7.8125vw;
