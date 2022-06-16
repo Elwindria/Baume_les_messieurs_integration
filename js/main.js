@@ -96,7 +96,6 @@ const divTextCarousel2 = document.querySelector(".div_text_carousel_2");
 const divTextCarousel3 = document.querySelector(".div_text_carousel_3");
 const divTextCarousel4 = document.querySelector(".div_text_carousel_4");
 
-
 const abbaye = document.getElementById("abbaye");
 const grotte = document.getElementById("grotte");
 const cascade = document.getElementById("cascade");
