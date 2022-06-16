@@ -23,7 +23,7 @@ html{
 }
 
 #navigation {
-    background: rgba(251, 251, 251, 0.5);
+    background: rgba(251, 251, 251);
     height: 5.2083vw;
     display: flex;
     align-items: center;
@@ -88,23 +88,25 @@ html{
     border-radius: 30px;
 }
 
-#btn_discover_nav_bar {
-    padding-left: 1.0417vw;
-}
-
 #nav_discover {
     position: absolute;
-    top: 5.2083vw;
-    background-color: rgba(251, 251, 251, 0.5);
-    padding: .7vw;
+    top: 1.8229vw;
+    right: 40.625vw;
+    background-color: rgba(251, 251, 251);
+    padding: 0 1.0417vw 1.0417vw 1.0417vw; 
+    width: 7.8125vw;
 }
 
 #nav_right > #nav_discover > ul {
     display: flex;
     flex-direction: column;
-    gap: 1.5vw;
+    gap: 1vw;
     margin: 0;
     text-align: center;
+}
+
+.hidden_btn_nav_discover {
+    display: none;
 }
 
 
