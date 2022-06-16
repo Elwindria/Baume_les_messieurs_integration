@@ -1,15 +1,10 @@
 /* Carousel_discover version Desktop start */
 
 const photoCarousel = document.querySelectorAll(".photo_carousel");
-const carousel_1 = document.querySelector(".carousel_1");
-const carousel_2 = document.querySelector(".carousel_2");
-const carousel_3 = document.querySelector(".carousel_3");
-const carousel_4 = document.querySelector(".carousel_4");
 
-carousel_1.onclick = function() {fctCarousel(carousel_1, "carousel_1");}
-carousel_2.onclick = function() {fctCarousel(carousel_2, "carousel_2");}
-carousel_3.onclick = function() {fctCarousel(carousel_3, "carousel_3");}
-carousel_4.onclick = function() {fctCarousel(carousel_4, "carousel_4");}
+photoCarousel.forEach(element => {
+    element.onclick = function() {fctCarousel(element, element.classList[1])}
+});
 
 function fctCarousel(carousel, className) {
     photoCarousel.forEach(element => {
