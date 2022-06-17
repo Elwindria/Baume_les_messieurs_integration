@@ -121,41 +121,34 @@ btnNavBarReculee.onclick = function() { reculee.scrollIntoView({ behavior: 'smoo
 const header = document.querySelector("#header");
 const navBar = document.querySelector("#navigation");
 
-window.addEventListener('scroll',() => {
-  
-    let scrollY = this.scrollY;
-    if(scrollY > header.clientHeight ){
-        navBar.classList.add("nav_bar_opacity_out");
-        navBar.classList.remove("nav_bar_opacity_in");
-    }else {
+if (window.innerWidth > 1280) {
+    window.addEventListener('scroll',() => {
+    
+        let scrollY = this.scrollY;
+        if(scrollY > header.clientHeight ){
+            navBar.classList.add("nav_bar_opacity_out");
+            navBar.classList.remove("nav_bar_opacity_in");
+        }else {
+            navBar.classList.add("nav_bar_opacity_in");
+            navBar.classList.remove("nav_bar_opacity_out");
+        }
+    })
+
+    navBar.addEventListener("mouseover", function() {
         navBar.classList.add("nav_bar_opacity_in");
         navBar.classList.remove("nav_bar_opacity_out");
-    }
-})
+    })
 
-// window.addEventListener("mousein",(e)=>{
-//     if(e.target !== navBar && scrollY > header.clientHeight ){
-//         navBar.classList.add("nav_bar_opacity_out");
-//         navBar.classList.remove("nav_bar_opacity_in");
-//     }else {
-//         navBar.classList.add("nav_bar_opacity_in");
-//         navBar.classList.remove("nav_bar_opacity_out");
-//     }
-// })
+    navBar.addEventListener("mouseout", function() {
+        let scrollY = window.scrollY;
 
-navBar.addEventListener("mouseover", function() {
-    navBar.classList.add("nav_bar_opacity_in");
-    navBar.classList.remove("nav_bar_opacity_out");
-})
+        if (scrollY > header.clientHeight ){
+            navBar.classList.add("nav_bar_opacity_out");
+            navBar.classList.remove("nav_bar_opacity_in");
+        }
+    })
+}
 
-navBar.addEventListener("mouseout", function() {
-    let scrollY = window.scrollY;
-
-    if (scrollY > header.clientHeight ){
-        navBar.classList.add("nav_bar_opacity_out");
-        navBar.classList.remove("nav_bar_opacity_in");
-    }
-})
 
 /* NavBar apparition */
 /* NavDiscover Apparition */
