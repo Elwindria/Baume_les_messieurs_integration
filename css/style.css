@@ -8,6 +8,10 @@ html{
     scroll-behavior:smooth;
 }
 
+.full_vh {
+    height:100vh;
+}
+
 /* ============================================ */
 /* Nav */
 
@@ -112,7 +116,6 @@ html{
 /* header */
 
 #header {
-    height: 100vh;
     background-image: url(/github/baume_les_messieurs_integration/images/autre_2.webp);
     background-size: cover;
     position:sticky;
@@ -171,7 +174,6 @@ html{
 /* top of page */
 
 #top_of_page {
-    height: 100vh;
     display: flex;
     padding: 0 100px;
     background-color: #FBFBFB;
@@ -251,7 +253,6 @@ html{
 
 #carousel {
     background-color: #000000;
-    height: 100vh;
     display: flex;
 }
 
@@ -387,15 +388,15 @@ html{
 
 .block_main_container {
     height:75vh;
-    padding: 2.6042vw 2.4479vw 2.6042vw;
+    padding: 5.2083vw 5.2083vw 5.2083vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .block_main_container>div {
     display: flex;
-}
-
-.main_container_div {
-    width: 50vw;
+    gap:5.2083vw;
 }
 
 .main_container_div>img {
@@ -443,7 +444,6 @@ html{
 #contact_block {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     box-sizing: border-box;
     background-color: #fbfbfb;
 }
@@ -506,7 +506,6 @@ iframe{
 /* galerie photo */
 
 #galery {
-    height:100vh;
     background-color: #fbfbfb;
     padding: 2.6042vw 0;
     box-sizing: border-box;
