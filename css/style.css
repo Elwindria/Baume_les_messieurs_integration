@@ -4,10 +4,6 @@ body{
     box-sizing:border-box;
 }
 
-#desktop{
-    max-width: 1920px;
-}
-
 html{
     scroll-behavior:smooth;
 }
@@ -384,7 +380,7 @@ html{
 /* main_container */
 
 #main_container {
-    background-color: #fbfbfb;
+    background-color: #fff;
     background-image: url("/github/baume_les_messieurs_integration/images/website/desktop_fond_top_corp.png");
     background-repeat: no-repeat;
 }
