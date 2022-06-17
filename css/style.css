@@ -177,6 +177,7 @@ html{
     display: flex;
     padding: 0 100px;
     background-color: #FBFBFB;
+
 }
 
 #top_left {
@@ -453,6 +454,10 @@ html{
     background-image: url(/github/baume_les_messieurs_integration/images/website/desktop_fond_contact.png);
     background-repeat: no-repeat;
     background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 #contact>div>h4{
@@ -461,7 +466,7 @@ html{
     font-size: 2.6042vw;
     color: #FBFBFB;
     margin:0;
-    padding: 1.0417vw 6.77vw;
+    padding: 1.0417vw 75vw 2.0417vw 0;
 }
 
 #contact_block_text {
@@ -688,3 +693,28 @@ iframe{
 }
 
 /* All hover end */
+
+/* Responsive start ! */ 
+/* Responsive tablet start */
+
+@media screen and (max-width: 1280px) {
+
+    .full_vh {
+        max-height: 548px;
+    }
+
+    .block_main_container {
+        max-height: 411px;
+    }
+
+    #contact {
+        max-height: 246px;
+    }
+
+    iframe {
+        max-height: 250px;
+    }
+}
+
+/* Responsive end ! */ 
+/* Responsive tablet end */
