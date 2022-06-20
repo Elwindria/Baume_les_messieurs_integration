@@ -768,6 +768,10 @@ iframe{
 
     /* btn checkbox start */
 
+    #nav_responsive{
+        display: unset;
+    }
+
     #openBtn:checked ~ .menu-toggle > .burger-icon > .burgerline1 {
         transform: translateY(3px) rotate(45deg);
     }
@@ -780,14 +784,10 @@ iframe{
         transform: translateY(-3px) rotate(-45deg);
     }
 
-    #openBtn:checked ~ #nav_responsive {
-        display:unset;
-    }
-
     .smooth_in {
         animation: smooth_in .3s steps(200,end) forwards;
     }
-    
+
     .smoot_out {
         animation: smooth_out .3s steps(200,end) forwards;
     }

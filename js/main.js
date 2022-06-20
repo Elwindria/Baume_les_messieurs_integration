@@ -176,16 +176,17 @@ navDiscover.addEventListener("mouseout", function() {
 
 const openBtn = document.querySelector('#openBtn');
 const menuToggle = document.querySelector('.menu-toggle');
-const navResponsive = document.querySelector('#nav_responsive_ul');
+const navResponsiveUl = document.querySelector('#nav_responsive_ul');
+const navResponsive = document.querySelector('#nav_responsive');
 
 menuToggle.onclick = function(){
 
-    if (openBtn.checked = true ) {
-        navResponsive.classList.add("smooth_in");
-        navResponsive.classList.remove("smooth_out");
+    if (navResponsiveUl.classList[0] != 'smooth_in') {
+        navResponsiveUl.classList.add("smooth_in");
+        navResponsiveUl.classList.remove("smooth_out");
     } else {
-        navResponsive.classList.remove("smooth-in");
-        navResponsive.classList.add("smooth_out");
+        navResponsiveUl.classList.remove("smooth_in");
+        navResponsiveUl.classList.add("smooth_out");
     }
 }
 
