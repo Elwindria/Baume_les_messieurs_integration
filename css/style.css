@@ -15,6 +15,10 @@ html{
 /* ============================================ */
 /* Nav */
 
+#openBtn {
+    display:none;
+}
+
 #fixed_nav {
     width: 100vw;
     position: fixed;
@@ -509,7 +513,7 @@ iframe{
     height: .2604vw;
     background-color: #151850;
     border-radius: 25px;
-    margin: auto;
+    margin: 1vw auto ;
 }
 /* contact */
 /* galerie photo */
@@ -703,6 +707,10 @@ iframe{
 
 @media screen and (max-width: 1280px) {
 
+    .img_arrow{
+        display: none;
+    }
+
     .nav_hidden {
         display: none;
     }
@@ -723,22 +731,92 @@ iframe{
         max-height: 250px;
     }
 
-    #nav_responsive {
-        display: unset;
-    }
+    /* navResponsive Start */
 
     #nav_right > #nav_responsive > ul {
+        margin:0;
         flex-direction: column;
-        gap: .7813vw;
+        gap: 1.1979vw;
         position: absolute;
         top: 5.2083vw;
-        background-color: #414479;
+        right: 0;
+        padding: 4vw 7vw;
+        background: url(/github/baume_les_messieurs_integration/images/website/phone_fond_menuburger.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+        align-items: center;
     }
 
     #nav_right > #nav_responsive > ul > li > a {
         color: #FBFBFB;
+        font-size: 1.6vw;
     }
+
+    #nav_right > #nav_responsive > ul > li > #discover_nav_responsive{
+        border-bottom: 2px solid #fff;
+        padding-bottom: .3vw;
+    }
+
+    #nav_right > #nav_responsive > ul > li > #galery_nav_responsive{
+        border-top: 2px solid #fff;
+        padding-top: .3vw;
+    }
+
+    #nav_right > #nav_responsive > ul > li > .small{
+        font-size: 1.3vw;
+    }
+
+    /* btn checkbox start */
+
+    #openBtn:checked ~ .menu-toggle > .burger-icon > .burgerline1 {
+        transform: translateY(3px) rotate(45deg);
+    }
+
+    #openBtn:checked ~ .menu-toggle > .burger-icon > .burgerline2 {
+        display:none;
+    }
+
+    #openBtn:checked ~ .menu-toggle > .burger-icon > .burgerline3 {
+        transform: translateY(-3px) rotate(-45deg);
+    }
+
+    #openBtn:checked ~ #nav_responsive {
+        display:unset;
+    }
+
+    .smooth_in {
+        animation: smooth_in .3s steps(200,end) forwards;
+    }
+    
+    .smoot_out {
+        animation: smooth_out .3s steps(200,end) forwards;
+    }
+
+    @keyframes smooth_in {from {transform: translateX(300px);} to {transform: translateX(0px);}}
+    @keyframes smooth_out {from {transform: translateX(0px);} to {transform: translateX(300px);}}
+
+    .burger-icon {
+        width: 32px;
+        height: 32px;
+        border: #000000 1.5008px solid;
+        display: flex;
+        flex-direction: column;
+        gap:4.5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .burger-icon > span {
+        display: block;
+        width: 16px;
+        height: 1px;
+        background-color: black;
+    }
+
+    /* btn checkbox end */
 }
+    /*NavResponsive Stop */
+
 
 @media screen and (max-width: 1024px) {
 
@@ -759,6 +837,5 @@ iframe{
         max-height: 222px;
     }
 }
-
-/* Responsive end ! */ 
 /* Responsive tablet end */
+/* Responsive end ! */ 

@@ -69,6 +69,8 @@ function fctGaleriePhoto(moreOrLess) {
 
 /* arrow_galerie_photo start */
 
+if (window.innerWidth > 1280) {
+
 const imgArrowLeft = document.querySelector(".img_arrow_left");
 const imgArrowRight = document.querySelector(".img_arrow_right");
 
@@ -77,6 +79,7 @@ arrowLeft.addEventListener("mouseout", function() {imgArrowLeft.style.display = 
 arrowRight.addEventListener("mouseover", function() {imgArrowRight.style.display = ("unset");})
 arrowRight.addEventListener("mouseout", function() {imgArrowRight.style.display = ("none");})
 
+}
 /* arrow_galerie_photo end */
 /*Galerie Photo end */
 
@@ -169,3 +172,21 @@ navDiscover.addEventListener("mouseout", function() {
 })
 
 /* navDiscover Apparition */
+/* navBar Responsive Apparition */
+
+const openBtn = document.querySelector('#openBtn');
+const menuToggle = document.querySelector('.menu-toggle');
+const navResponsive = document.querySelector('#nav_responsive_ul');
+
+menuToggle.onclick = function(){
+
+    if (openBtn.checked = true ) {
+        navResponsive.classList.add("smooth_in");
+        navResponsive.classList.remove("smooth_out");
+    } else {
+        navResponsive.classList.remove("smooth-in");
+        navResponsive.classList.add("smooth_out");
+    }
+}
+
+/* navBar Responsive Apparition */
