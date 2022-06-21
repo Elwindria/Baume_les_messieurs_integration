@@ -906,7 +906,7 @@ iframe{
 
     #img_top_of_page_phone {
         display: unset;
-        width: 100vw;
+        width: 100%;
         height: auto;
     }
 
@@ -944,15 +944,21 @@ iframe{
     @keyframes slideoutresponsive { from {height: 70%;} to {height: 10%;}}
 
     .photo_carousel > .div_text_carousel {
-        height: 12vw;
+        height: unset;
+        text-align: center;
+        padding: 2vw 0;
     }
 
     .title_carousel{
-        font-size: 3.5vw;
+        font-size: 5vw;
+        animation: unset;
     }
 
     .p_carousel {
-        font-size: 2.5vw;
+        font-size: 4vw;
+        animation: unset;
+        white-space: unset;
+        visibility: unset;
     }
 
     /* discover stop */
@@ -986,7 +992,7 @@ iframe{
     }
 
     .main_container_p {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .main_container_span {
@@ -1008,6 +1014,8 @@ iframe{
         max-height: unset;
         height: unset;
         padding: 5vw;
+        background-image: unset;
+        background-color: #414479;
     }
 
     #contact > div > h4 {
@@ -1029,7 +1037,7 @@ iframe{
     }
 
     .contact_text > p {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     iframe {
