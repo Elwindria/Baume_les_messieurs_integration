@@ -129,6 +129,7 @@ html{
     position:sticky;
     top:0px;
     z-index: -1;
+    box-sizing: border-box;
 }
 
 #header_logo {
@@ -182,9 +183,12 @@ html{
 
 #top_of_page {
     display: flex;
-    padding: 0 100px;
+    padding: 0 5.2083vw;
     background-color: #FBFBFB;
+}
 
+#img_top_of_page_phone{
+    display: none;
 }
 
 #top_left {
@@ -226,7 +230,7 @@ html{
     width: 50vw;
 }
 
-#top_right>img {
+#img_top_of_page_desktop {
     position: relative;
     transform:translate(100px, 0px);
     height:auto;
@@ -770,7 +774,6 @@ iframe{
 
     #nav_responsive{
         display: unset;
-        transition: 1s;
     }
 
     #nav_responsive_ul {
@@ -781,7 +784,7 @@ iframe{
     .burger-icon {
         width: 32px;
         height: 32px;
-        border: #000000 1.5008px solid;
+        border: #414479 1.5px solid;
         display: flex;
         flex-direction: column;
         gap:4.5px;
@@ -793,7 +796,11 @@ iframe{
         display: block;
         width: 16px;
         height: 1px;
-        background-color: black;
+        background-color: #414479;
+    }
+
+    .burgerline {
+        transition: .3s;
     }
 
     /* btn checkbox end */
@@ -820,5 +827,108 @@ iframe{
         max-height: 222px;
     }
 }
+
 /* Responsive tablet end */
+/* Responsive phone start */
+
+@media screen and (max-width: 767px) {
+
+    .full_vh {
+        max-height: 500px;
+    }
+    
+    /*navBar start */
+
+    #navigation {
+        height: 13.0378vw;
+    }
+
+    #name_web {
+        font-size: 4vw;
+    }
+
+    .logo_baume {
+        width: 8vw;
+    }
+
+    /*navBar stop */
+    /* top_of_page start */
+
+    #top_of_page {
+        flex-direction: column-reverse;
+        padding: 0;
+        height: unset;
+        max-height: unset;
+    }
+
+    #top_left {
+        width: unset;
+        padding: 0 1.9557vw 4vw 1.9557vw;
+        text-align: center;
+    }
+
+    #top_left > h1 {
+        font-size: 7vw;
+    }
+
+    #top_left > h2 {
+        font-size: 6vw;
+    }
+
+    #top_left > p {
+        font-size: 4vw;
+    }
+
+    #top_right {
+        width: unset;
+    }
+
+    #img_top_of_page_desktop {
+        display: none;
+    }
+
+    #img_top_of_page_phone {
+        display: unset;
+        width: 100vw;
+        height: auto;
+    }
+
+    /* top_of_page stop */
+    /* discover start */
+    
+    #carousel {
+        flex-direction: column;
+    }
+
+    .photo_carousel{
+        width: unset;
+        min-width: unset;
+        max-width: unset;
+        max-height: 70vh;
+        min-height: 10vh;
+    }
+
+    
+
+    /* discover stop */
+
+}
+
+@media screen and (max-width: 480px) {
+    #header {
+        background-image: url(/github/baume_les_messieurs_integration/images/autre_2_phone.jpg);
+    }
+
+    #main_title {
+        padding-top: 40vw;
+    }
+
+    #title_header {
+        text-shadow: none;
+    }
+}
+
+/* Responsive phone end */
 /* Responsive end ! */ 
+
+

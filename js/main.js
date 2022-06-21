@@ -183,7 +183,7 @@ const burgerLine2 = document.querySelector('.burgerline2');
 const burgerLine3 = document.querySelector('.burgerline3');
 
 menuToggle.onclick = function(){
-console.log(navResponsiveUl.style.transform)
+
     if ( navResponsiveUl.style.transform != 'translateX(0px)' ) {
         navResponsiveUl.style.transform = ("translateX(0px)");
         burgerLine1.style.transform = ('translateY(3px) rotate(45deg)');
