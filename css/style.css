@@ -833,6 +833,23 @@ iframe{
 
 @media screen and (max-width: 767px) {
 
+    /* navResponsive start */
+
+    #nav_right > #nav_responsive > ul {
+        top: 13.0378vw;
+        gap: 2vw;
+    }
+
+    #nav_right > #nav_responsive > ul > li > a {
+        font-size: 3.2vw;
+    }
+
+    #nav_right > #nav_responsive > ul > li > .small {
+        font-size: 2.6vw;
+    }
+
+    /* navResponsive stop */
+
     .full_vh {
         max-height: 500px;
     }
@@ -908,7 +925,35 @@ iframe{
         min-height: 10vh;
     }
 
+    #carousel>.activate {
+        animation-duration: .5s;
+        animation-name: slideinresponsive;
+        height: 70%;
+        width: unset;
+        opacity: unset;
+        transform: unset;
+    }
     
+    .last {
+        animation-duration: .5s;
+        animation-name: slideoutresponsive;
+    }
+    
+    @keyframes slideinresponsive { from {height: 10%;} to {height: 70%;}}
+    
+    @keyframes slideoutresponsive { from {height: 70%;} to {height: 10%;}}
+
+    .photo_carousel > .div_text_carousel {
+        height: 12vw;
+    }
+
+    .title_carousel{
+        font-size: 3.5vw;
+    }
+
+    .p_carousel {
+        font-size: 2.5vw;
+    }
 
     /* discover stop */
 
@@ -926,6 +971,22 @@ iframe{
     #title_header {
         text-shadow: none;
     }
+
+    /* navResponsive start */
+
+    #nav_right > #nav_responsive > ul {
+        padding: 10vw 14vw;
+    }
+
+    #nav_right > #nav_responsive > ul > li > a {
+        font-size: 5vw;
+    }
+
+    #nav_right > #nav_responsive > ul > li > .small {
+        font-size: 3.7vw;
+    }
+
+    /* navResponsive stop */
 }
 
 /* Responsive phone end */

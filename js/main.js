@@ -7,6 +7,7 @@ photoCarousel.forEach(element => {
 });
 
 function fctCarousel(carousel, className) {
+
     photoCarousel.forEach(element => {
             if (element.classList.contains("activate") && element.classList[1] != className ) {
                 element.classList.add("last");
@@ -198,3 +199,13 @@ menuToggle.onclick = function(){
 }
 
 /* navBar Responsive Apparition */
+/* Responsive Phone */
+
+// const carousel1 = document.querySelector(".carousel_1");
+// console.log( carousel1.classList[1])
+// if (window.innerWidth < 767) {
+//     carousel1.classList.remove('activate');
+//     carousel1.classList.add('activate_2');
+// }
+
+/* Responsive phone */
