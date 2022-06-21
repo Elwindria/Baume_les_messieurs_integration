@@ -1002,6 +1002,41 @@ iframe{
     }
 
     /* main_container stop */
+    /* contact start */
+
+    #contact {
+        max-height: unset;
+        height: unset;
+        padding: 5vw;
+    }
+
+    #contact > div > h4 {
+    font-size: 6vw;
+    padding: 0 0 3vw 0;
+    }
+
+    #contact_block_text {
+        flex-direction: column;
+    }
+
+    .contact_text {
+        width: 80vw;
+        text-align: center;
+    }
+
+    .contact_text > h5 {
+        font-size: 4.7vw;
+    }
+
+    .contact_text > p {
+        font-size: 3vw;
+    }
+
+    iframe {
+        max-height: unset;
+    }
+
+    /* contact stop */
 
 }
 
