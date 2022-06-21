@@ -770,30 +770,13 @@ iframe{
 
     #nav_responsive{
         display: unset;
+        transition: 1s;
     }
 
-    #openBtn:checked ~ .menu-toggle > .burger-icon > .burgerline1 {
-        transform: translateY(3px) rotate(45deg);
+    #nav_responsive_ul {
+        transition: 1s;
+        transform: translateX(300px);
     }
-
-    #openBtn:checked ~ .menu-toggle > .burger-icon > .burgerline2 {
-        display:none;
-    }
-
-    #openBtn:checked ~ .menu-toggle > .burger-icon > .burgerline3 {
-        transform: translateY(-3px) rotate(-45deg);
-    }
-
-    .smooth_in {
-        animation: smooth_in .3s steps(200,end) forwards;
-    }
-
-    .smoot_out {
-        animation: smooth_out .3s steps(200,end) forwards;
-    }
-
-    @keyframes smooth_in {from {transform: translateX(300px);} to {transform: translateX(0px);}}
-    @keyframes smooth_out {from {transform: translateX(0px);} to {transform: translateX(300px);}}
 
     .burger-icon {
         width: 32px;

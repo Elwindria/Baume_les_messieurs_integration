@@ -178,15 +178,22 @@ const openBtn = document.querySelector('#openBtn');
 const menuToggle = document.querySelector('.menu-toggle');
 const navResponsiveUl = document.querySelector('#nav_responsive_ul');
 const navResponsive = document.querySelector('#nav_responsive');
+const burgerLine1 = document.querySelector('.burgerline1');
+const burgerLine2 = document.querySelector('.burgerline2');
+const burgerLine3 = document.querySelector('.burgerline3');
 
 menuToggle.onclick = function(){
-
-    if (navResponsiveUl.classList[0] != 'smooth_in') {
-        navResponsiveUl.classList.add("smooth_in");
-        navResponsiveUl.classList.remove("smooth_out");
+console.log(navResponsiveUl.style.transform)
+    if ( navResponsiveUl.style.transform != 'translateX(0px)' ) {
+        navResponsiveUl.style.transform = ("translateX(0px)");
+        burgerLine1.style.transform = ('translateY(3px) rotate(45deg)');
+        burgerLine2.style.display =("none");
+        burgerLine3.style.transform = ('translateY(-3px) rotate(-45deg)');
     } else {
-        navResponsiveUl.classList.remove("smooth_in");
-        navResponsiveUl.classList.add("smooth_out");
+        navResponsiveUl.style.transform = ("translateX(300px)");
+        burgerLine1.style.transform = ('unset');
+        burgerLine2.style.display =("unset");
+        burgerLine3.style.transform = ('unset');
     }
 }
 
