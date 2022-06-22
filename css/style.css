@@ -187,10 +187,6 @@ html{
     background-color: #FBFBFB;
 }
 
-#img_top_of_page_phone{
-    display: none;
-}
-
 #top_left {
     padding-top: 5%;
     width: 50vw;
@@ -230,7 +226,7 @@ html{
     width: 50vw;
 }
 
-#img_top_of_page_desktop {
+#img_top_of_page {
     position: relative;
     transform:translate(100px, 0px);
     height:auto;
@@ -900,14 +896,10 @@ iframe{
         width: unset;
     }
 
-    #img_top_of_page_desktop {
-        display: none;
-    }
-
-    #img_top_of_page_phone {
-        display: unset;
+    #img_top_of_page {
         width: 100%;
         height: auto;
+        transform: unset;
     }
 
     /* top_of_page stop */
