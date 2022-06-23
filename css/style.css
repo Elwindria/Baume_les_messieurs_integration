@@ -909,6 +909,22 @@ iframe{
         flex-direction: column;
     }
 
+    .carousel_1 {
+        background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/carousel_discover_phone/abbaye.webp);
+    }
+    
+    .carousel_2 {
+        background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/carousel_discover_phone/grotte.webp);
+    }
+    
+    .carousel_3 {
+        background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/carousel_discover_phone/cascade.webp);
+    }
+    
+    .carousel_4 {
+        background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/carousel_discover_phone/reculee.webp);
+    }
+
     .photo_carousel{
         width: unset;
         min-width: unset;
