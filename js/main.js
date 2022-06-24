@@ -195,7 +195,7 @@ menuToggle.onclick = function(){
         burgerLine2.style.display =("none");
         burgerLine3.style.transform = ('translateY(-3px) rotate(-45deg)');
     } else {
-        navResponsiveUl.style.transform = ("translateX(300px)");
+        navResponsiveUl.style.transform = ("translateX(100%)");
         burgerLine1.style.transform = ('unset');
         burgerLine2.style.display =("unset");
         burgerLine3.style.transform = ('unset');

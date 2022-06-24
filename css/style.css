@@ -774,7 +774,7 @@ iframe{
 
     #nav_responsive_ul {
         transition: 1s;
-        transform: translateX(39.1134vw);
+        transform: translateX(100%);
     }
 
     .burger-icon {
@@ -1008,7 +1008,7 @@ iframe{
     }
 
     .main_container_span {
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     #grotte > div {
