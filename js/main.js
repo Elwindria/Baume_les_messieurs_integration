@@ -53,11 +53,11 @@ let nbr_max_photo = 6;
 
 arrowLeft.onclick = function() {fctGaleriePhoto(-1);}
 arrowRight.onclick = function() {fctGaleriePhoto(+1);}
-fctGaleriePhoto()
+fctGaleriePhoto();
 
 function fctGaleriePhoto(moreOrLess) {
 
-    if (window.innerWidth < 767) { galeryPhotoPhone = "/galery_photo_phone";} else {galeryPhotoPhone = "";}
+    if (window.innerWidth < 767) {galeryPhotoPhone = "/galery_photo_phone";} else {galeryPhotoPhone = "";}
 
     if (moreOrLess == -1 ){ x--, p--, y-- } else { x++, p++, y++ }
     
@@ -68,6 +68,8 @@ function fctGaleriePhoto(moreOrLess) {
     arrowLeft.style.backgroundImage = "url('/github/baume_les_messieurs_integration/images/galery_photo"+galeryPhotoPhone+"/galery_"+x+".webp')";
     galeryMain.style.backgroundImage = "url('/github/baume_les_messieurs_integration/images/galery_photo"+galeryPhotoPhone+"/galery_"+p+".webp')";
     arrowRight.style.backgroundImage = "url('/github/baume_les_messieurs_integration/images/galery_photo"+galeryPhotoPhone+"/galery_"+y+".webp')";
+
+    if (window.innerWidth < 767) { setTimeout(fctGaleriePhoto, 2000);}
 } 
 
 /* arrow_galerie_photo start */
@@ -201,13 +203,3 @@ menuToggle.onclick = function(){
 }
 
 /* navBar Responsive Apparition */
-/* Responsive Phone */
-
-// const carousel1 = document.querySelector(".carousel_1");
-// console.log( carousel1.classList[1])
-// if (window.innerWidth < 767) {
-//     carousel1.classList.remove('activate');
-//     carousel1.classList.add('activate_2');
-// }
-
-/* Responsive phone */
