@@ -79,9 +79,9 @@ if (window.innerWidth > 1280) {
 const imgArrowLeft = document.querySelector(".img_arrow_left");
 const imgArrowRight = document.querySelector(".img_arrow_right");
 
-arrowLeft.addEventListener("mouseover", function() {imgArrowLeft.style.display = ("unset");})
+arrowLeft.addEventListener("mouseover", function() {imgArrowLeft.style.display = ("flex");})
 arrowLeft.addEventListener("mouseout", function() {imgArrowLeft.style.display = ("none");})
-arrowRight.addEventListener("mouseover", function() {imgArrowRight.style.display = ("unset");})
+arrowRight.addEventListener("mouseover", function() {imgArrowRight.style.display = ("flex");})
 arrowRight.addEventListener("mouseout", function() {imgArrowRight.style.display = ("none");})
 
 }

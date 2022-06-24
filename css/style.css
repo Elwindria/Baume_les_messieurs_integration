@@ -531,18 +531,18 @@ iframe{
     cursor: pointer;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(40%);
+    filter: brightness(30%);
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .arrow:hover {
-    filter: brightness(30%);
-    transform: scale(1.005);
+    transition: all .6s;
+    filter: brightness(60%);
 }
 
 .img_arrow {
-    padding-top: 16.4583vw;
     display: none;
     animation: img_arrow_pop .3s steps(40,end);
 }
@@ -553,6 +553,11 @@ iframe{
     width: 70%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.galery_photo_animation{
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
 /* galerie photo */
