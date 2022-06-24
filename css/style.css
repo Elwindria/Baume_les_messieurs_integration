@@ -754,21 +754,21 @@ iframe{
 
     #nav_right > #nav_responsive > ul > li > a {
         color: #FBFBFB;
-        font-size: 1.6vw;
+        font-size: 2.4vw;
     }
 
     #nav_right > #nav_responsive > ul > li > #discover_nav_responsive{
         border-bottom: 2px solid #fff;
-        padding-bottom: .3vw;
+        padding-bottom: .6vw;
     }
 
     #nav_right > #nav_responsive > ul > li > #galery_nav_responsive{
         border-top: 2px solid #fff;
-        padding-top: .3vw;
+        padding-top: .6vw;
     }
 
     #nav_right > #nav_responsive > ul > li > .small{
-        font-size: 1.3vw;
+        font-size: 2.2vw;
     }
 
     /* btn checkbox start */
@@ -807,6 +807,21 @@ iframe{
     /* btn checkbox end */
 }
     /*NavResponsive Stop */
+    /* TopOfpage start */
+
+    .main_container_h {
+        font-size: 2vw;
+    }
+
+    .main_container_p {
+        font-size: 1.2vw;
+    }
+
+    .main_container_span {
+        font-size: 1.2vw;
+    }
+
+    /* TopOfpage stop */
 
 
 @media screen and (max-width: 1024px) {
@@ -1082,6 +1097,65 @@ iframe{
     }
 
     /* Galery Photo end */
+    /* Footer start */
+
+    #footer {
+        background-image: url(/github/baume_les_messieurs_integration/images/website/phone_footer.png);
+    }
+
+    #nav_footer {
+        flex-direction: column-reverse;
+    }
+
+    #div_logo {
+        gap: 9.1265vw;
+    }
+
+    .logo {
+        width: 6.5189vw;
+    }
+
+    #title_nav_footer > h5 {
+        font-size: 4vw;
+    }
+
+    .logo_baume_nav_footer{
+        width: 8vw;
+    }
+
+    #line_3 {
+        height: .5vw;
+    }
+
+    #newsletter > h5 {
+        font-size: 4vw;
+    }
+
+    #newsletter > div {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #input_email {
+        font-size: 2.5vw;
+        padding: 1.5vw 25vw 1.5vw 0;
+    }
+
+    #input_email::placeholder {
+        font-size: 2.5vw;
+    }
+
+    #btn_mail {
+        font-size: 4vw;
+        padding: 1vw 2.5vw;
+        width: 70%;
+    }
+
+    #main_footer > p {
+        font-size: 3.5vw;
+    }
+
+    /* Footer end */
 
 }
 
