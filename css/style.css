@@ -183,7 +183,7 @@ html{
 
 #top_of_page {
     display: flex;
-    padding: 0 5.2083vw;
+    padding: 0 5.2083vw 5.2083vw 5.2083vw;
     background-color: #FBFBFB;
 }
 
@@ -227,8 +227,7 @@ html{
 }
 
 #img_top_of_page {
-    position: relative;
-    transform:translate(100px, 0px);
+    transform:translate(5.2083vw, 0px);
     height:auto;
     width: 100%;
 }
@@ -918,8 +917,6 @@ iframe{
     #top_of_page {
         flex-direction: column-reverse;
         padding: 0;
-        height: unset;
-        max-height: unset;
     }
 
     #top_left {
