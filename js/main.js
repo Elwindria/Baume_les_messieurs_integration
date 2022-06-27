@@ -42,39 +42,6 @@ divTextCarousel.forEach(element => {
 });
 
 /*Carousel_discover animation en savoir plus end */
-/* Intersection Observer start */
-
-const allImgMainContainer = document.querySelectorAll(".img_main_container");
-const imgMainLeft1 = document.querySelector('.img_main_left_1');
-const imgMainLeft2 = document.querySelector('.img_main_left_2');
-
-const callback = function( entries ) {
-
-    let observedImg = entries[0];
-
-    if (!observedImg.isIntersecting) {
-        observedImg.target.style.transition = '';
-        observedImg.target.style.opacity = '0%';
-
-        if (observedImg.target == imgMainLeft1 || observedImg.target == imgMainLeft2) {
-        observedImg.target.style.transform = 'translateX(-100%)';
-        } else {
-            observedImg.target.style.transform = 'translateX(100%)';
-        }
-
-    }else{
-        observedImg.target.style.transition = 'all 1s ease-in-out';
-        observedImg.target.style.transform = 'translateX(0px)';
-        observedImg.target.style.opacity = "100%";
-    } 
-};
-
-allImgMainContainer.forEach(element => {
-    const observer = new IntersectionObserver( callback);
-    observer.observe(element);
-});
-
-/* Intersection Observer end */
 /*Galerie Photo start */
 
 const arrowLeft = document.getElementById("galery_left");
@@ -242,3 +209,34 @@ function navResponsiveOpenOrNot(e){
 }
 
 /* navBar Responsive Apparition */
+/* Intersection Observer start */
+
+const allImgMainContainer = document.querySelectorAll(".img_main_container");
+const imgMainLeft1 = document.querySelector('.img_main_left_1');
+const imgMainLeft2 = document.querySelector('.img_main_left_2');
+
+const callback = function( entries ) {
+
+    let observedImg = entries[0];
+
+    if (!observedImg.isIntersecting) {
+        observedImg.target.style.transition = 'none';
+        observedImg.target.style.opacity = '0%';
+        if (observedImg.target == imgMainLeft1 || observedImg.target == imgMainLeft2) {
+        observedImg.target.style.transform = 'translateX(-100%)';
+        } else {
+            observedImg.target.style.transform = 'translateX(100%)';
+        }
+    }else{
+        observedImg.target.style.transition = 'all 1s ease-in-out';
+        observedImg.target.style.transform = 'translateX(0px)';
+        observedImg.target.style.opacity = "100%";
+    } 
+};
+
+allImgMainContainer.forEach(element => {
+    const observer = new IntersectionObserver( callback);
+    observer.observe(element);
+});
+
+/* Intersection Observer end */

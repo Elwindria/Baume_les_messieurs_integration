@@ -392,6 +392,7 @@ html{
     background-image: url("/github/baume_les_messieurs_integration/images/website/desktop_fond_top_corp.png");
     background-repeat: no-repeat;
     background-size: 40vw;
+    overflow: hidden;
 }
 
 .block_main_container {
@@ -413,10 +414,6 @@ html{
     height:auto;
     width: 37vw;
     overflow: hidden;
-}
-
-.photo_right>img {
-    padding-left: 5.2vw;
 }
 
 .transition {
@@ -1044,6 +1041,8 @@ iframe{
 
     .main_container_div {
         text-align: center;
+        overflow: hidden;
+        width: 100%;
     }
 
     .main_container_h {
