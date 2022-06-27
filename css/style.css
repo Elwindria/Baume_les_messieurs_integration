@@ -90,7 +90,7 @@ html{
     border: 3px solid #414479;
     background-color:#414479;
     padding: .5729vw 2.9167vw;
-    border-radius: 30px;
+    border-radius: 50px;
 }
 
 #nav_discover {
@@ -133,28 +133,29 @@ html{
 }
 
 #header_logo {
-    padding-left: 5.2083vw;
+    vertical-align: middle;
+    display: flex;
 }
 
 #main_title {
     display: flex;
-    padding-top: 20vw;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 10vh;
 }
 
 /* Logo Chapelle */
+
 #main_title>div {
     display: flex;
-    align-items: flex-end;
-    padding-left: 5.2083vw;
+    gap: 3.9113vw;
 }
 
 .chapelle {
     width: 11.7vw;
 }
 
-@keyframes chapelle_slide_top { from {height: 0vh;} to {height: 45vh;}}
-
-#main_title>h1 {
+#main_title> div > h1 {
     display: flex;
     align-items: flex-end;
     font-family: 'Montserrat';
@@ -163,7 +164,6 @@ html{
     text-transform: uppercase;
     color: #FBFBFB;
     text-shadow: 0px 4px 25px #000000;
-    padding-left: 4.1667vw;
     margin:0;
     cursor: pointer;
 }
@@ -174,7 +174,7 @@ html{
     width: 78.125vw;
     margin-bottom: 4.1667vw;
     margin-top: 1.5625vw;
-    border-radius: 25px;
+    border-radius: 50px;
 }
 
 /* header */
@@ -217,7 +217,7 @@ html{
     background-color: #414479;
     width: 70%;
     height: 5px;
-    border-radius: 25px;
+    border-radius: 50px;
     margin:auto;
     margin-top: 50px;
 }
@@ -512,7 +512,7 @@ iframe{
     width: 33vw;
     height: .2604vw;
     background-color: #151850;
-    border-radius: 25px;
+    border-radius: 50px;
     margin: 1vw auto ;
 }
 /* contact */
@@ -640,7 +640,7 @@ iframe{
 
 #input_email {
     padding: .4167vw 25vw .4167vw 0;
-    border-radius: 25px;
+    border-radius: 50px;
     border: 3px solid #414479;
     font-family: 'Montserrat';
     font-weight: 700;
@@ -842,6 +842,7 @@ iframe{
     iframe {
         max-height: 222px;
     }
+
 }
 
 /* Responsive tablet end */

@@ -187,9 +187,16 @@ const burgerLine1 = document.querySelector('.burgerline1');
 const burgerLine2 = document.querySelector('.burgerline2');
 const burgerLine3 = document.querySelector('.burgerline3');
 
-menuToggle.onclick = function(){
+// menuToggle.onclick = function () {navResponsiveOpenOrNot(menuToggle)};
+document.addEventListener("click", function(e){
+    var eTarget = e.target;
+    navResponsiveOpenOrNot(eTarget);
+    console.log(eTarget);
+});
 
-    if ( navResponsiveUl.style.transform != 'translateX(0px)' ) {
+function navResponsiveOpenOrNot(e){
+
+    if ( navResponsiveUl.style.transform != 'translateX(0px)' && e.closest(".nav_responsive_ul")) {
         navResponsiveUl.style.transform = ("translateX(0px)");
         burgerLine1.style.transform = ('translateY(3px) rotate(45deg)');
         burgerLine2.style.display =("none");
