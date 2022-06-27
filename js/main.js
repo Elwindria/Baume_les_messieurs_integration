@@ -110,16 +110,16 @@ const cascade = document.getElementById("cascade");
 const reculee = document.getElementById("reculee");
 
 divTextCarousel1.onclick = function() { abbaye.scrollIntoView({ behavior: 'smooth' })}
-divTextCarousel2.onclick = function() { grotte.scrollIntoView({ behavior: 'smooth' })}
-divTextCarousel3.onclick = function() { cascade.scrollIntoView({ behavior: 'smooth' })}
-divTextCarousel4.onclick = function() { reculee.scrollIntoView({ behavior: 'smooth', block: 'end'})}
+divTextCarousel2.onclick = function() { grotte.scrollIntoView({ behavior: 'smooth'})}
+divTextCarousel3.onclick = function() { cascade.scrollIntoView({ behavior: 'smooth'})}
+divTextCarousel4.onclick = function() { reculee.scrollIntoView({ behavior: 'smooth'})}
 
 /*scroll discover_carousel */
 /*scroll navBar_btn_discover */
 
 const btnNavBarReculee = document.querySelector("#btn_navBar_reculee");
 
-btnNavBarReculee.onclick = function() { reculee.scrollIntoView({ behavior: 'smooth', block: 'end'})}
+btnNavBarReculee.onclick = function() { reculee.scrollIntoView({ behavior: 'smooth', block: 'center'})}
 
 /*scroll navBar_btn_discover */
 /* all scroll end */
@@ -196,12 +196,12 @@ document.addEventListener("click", function(e){
 
 function navResponsiveOpenOrNot(e){
 
-    if ( navResponsiveUl.style.transform != 'translateX(0px)' && e.closest(".nav_responsive_ul")) {
+    if ( navResponsiveUl.style.transform != 'translateX(0px)' && (e === menuToggle || e === burgerLine1 || e === burgerLine2 || e === burgerLine3 )){
         navResponsiveUl.style.transform = ("translateX(0px)");
         burgerLine1.style.transform = ('translateY(3px) rotate(45deg)');
         burgerLine2.style.display =("none");
         burgerLine3.style.transform = ('translateY(-3px) rotate(-45deg)');
-    } else {
+    } else if (navResponsiveUl.style.transform = 'translateX(0px)' && e != navResponsiveUl) {
         navResponsiveUl.style.transform = ("translateX(100%)");
         burgerLine1.style.transform = ('unset');
         burgerLine2.style.display =("unset");
