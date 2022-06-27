@@ -890,6 +890,29 @@ iframe{
     }
 
     /*navBar stop */
+    /* header start */
+
+    #main_title > div {
+        flex-direction: column;
+    }
+
+    .chapelle {
+        margin: auto;
+        width: 120px;
+    }
+
+    #main_title > div > h1 {
+        text-align: center;
+        margin: auto;
+        font-size: 35px;
+    }
+
+    #trait_1 {
+        margin: auto;
+        width: 70vw;
+    }
+
+    /* header end */
     /* top_of_page start */
 
     #top_of_page {
@@ -1188,6 +1211,22 @@ iframe{
     }
 
     /* navResponsive stop */
+    /* header start */
+
+    .chapelle {
+        width: 100px;
+    }
+
+    #main_title > div > h1 {
+        font-size: 23px;
+    }
+
+    #trait_1 {
+        width: 80vw;
+        height: 2px;
+    }
+
+    /* header end */
     /* Galery Photo start */
     
     #galery {
