@@ -542,6 +542,8 @@ iframe{
 }
 
 .img_arrow {
+    width: 3.5vw;
+    height: auto;
     display: none;
     animation: img_arrow_pop .3s steps(40,end);
 }
@@ -549,6 +551,7 @@ iframe{
 @keyframes img_arrow_pop { from {opacity: 0;} to {opacity: 1;} }
 
 #galery_main {
+    transition: all .6s;
     width: 70%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -830,7 +833,6 @@ iframe{
     }
 
     .block_main_container {
-        max-height: 333px;
         padding: 2.6042vw;
     }
 
