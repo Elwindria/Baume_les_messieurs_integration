@@ -407,9 +407,12 @@ html{
     gap:5.2083vw;
 }
 
-.main_container_div>img {
+
+
+.img_main_container {
     height:auto;
     width: 37vw;
+    overflow: hidden;
 }
 
 .photo_right>img {
@@ -752,6 +755,7 @@ iframe{
         background-repeat: no-repeat;
         background-size:cover;
         align-items: center;
+        overflow: hidden;
     }
 
     #nav_right > #nav_responsive > ul > li > a {
