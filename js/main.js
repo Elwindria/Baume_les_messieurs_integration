@@ -157,7 +157,6 @@ if (window.innerWidth > 1280) {
     })
 }
 
-
 /* NavBar apparition */
 /* NavDiscover Apparition */
 
