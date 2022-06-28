@@ -124,7 +124,7 @@ html{
 /* header */
 
 #header {
-    background-image: url(/github/baume_les_messieurs_integration/images/autre_2.webp);
+    background-image: url('../images/autre_2.webp');
     background-size: cover;
     position:sticky;
     top:0px;
@@ -273,25 +273,25 @@ html{
 }
 
 .carousel_1 {
-    background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/abbaye.webp);
+    background-image: url('../images/carousel_discover/abbaye.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .carousel_2 {
-    background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/grotte.webp);
+    background-image: url('../images/carousel_discover/grotte.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .carousel_3 {
-    background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/cascade.webp);
+    background-image: url('../images/carousel_discover/cascade.webp');
     background-repeat: no-repeat;
     background-size:cover;
 }
 
 .carousel_4 {
-    background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/reculee.webp);
+    background-image: url('../images/carousel_discover/reculee.webp');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -389,7 +389,7 @@ html{
 
 #main_container {
     background-color: #fff;
-    background-image: url("/github/baume_les_messieurs_integration/images/website/desktop_fond_top_corp.png");
+    background-image: url('../images/website/desktop_fond_top_corp.png');
     background-repeat: no-repeat;
     background-size: 40vw;
     overflow: hidden;
@@ -458,7 +458,7 @@ html{
 
 #contact {
     height:45vh;
-    background-image: url(/github/baume_les_messieurs_integration/images/website/desktop_fond_contact.png);
+    background-image: url('../images/website/desktop_fond_contact.png');
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
@@ -568,7 +568,7 @@ iframe{
 #footer {
     display: flex;
     flex-direction: column;
-    background-image: url(/github/baume_les_messieurs_integration/images/website/desktop_fond_footer.png);
+    background-image: url('../images/website/desktop_fond_footer.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -748,7 +748,7 @@ iframe{
         top: 5.2083vw;
         right: 0;
         padding: 4vw 7vw;
-        background: url(/github/baume_les_messieurs_integration/images/website/phone_fond_menuburger.png);
+        background: url('../images/website/phone_fond_menuburger.png');
         background-repeat: no-repeat;
         background-size:cover;
         align-items: center;
@@ -965,19 +965,19 @@ iframe{
     }
 
     .carousel_1 {
-        background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/carousel_discover_phone/abbaye.webp);
+        background-image: url('../images/carousel_discover/carousel_discover_phone/abbaye.webp');
     }
     
     .carousel_2 {
-        background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/carousel_discover_phone/grotte.webp);
+        background-image: url('../images/carousel_discover/carousel_discover_phone/grotte.webp');
     }
     
     .carousel_3 {
-        background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/carousel_discover_phone/cascade.webp);
+        background-image: url('../images/carousel_discover/carousel_discover_phone/cascade.webp');
     }
     
     .carousel_4 {
-        background-image: url(/github/baume_les_messieurs_integration/images/carousel_discover/carousel_discover_phone/reculee.webp);
+        background-image: url('../images/carousel_discover/carousel_discover_phone/reculee.webp');
     }
 
     .photo_carousel{
@@ -1133,7 +1133,7 @@ iframe{
     /* Footer start */
 
     #footer {
-        background-image: url(/github/baume_les_messieurs_integration/images/website/phone_footer.png);
+        background-image: url('../images/website/phone_footer.png');
     }
 
     #nav_footer {
@@ -1194,7 +1194,7 @@ iframe{
 
 @media screen and (max-width: 480px) {
     #header {
-        background-image: url(/github/baume_les_messieurs_integration/images/autre_2_phone.webp);
+        background-image: url('../images/autre_2_phone.webp');
     }
 
     #main_title {
