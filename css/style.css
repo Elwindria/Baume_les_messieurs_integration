@@ -868,6 +868,8 @@ iframe{
     #nav_right > #nav_responsive > ul {
         top: 13.0378vw;
         gap: 3vw;
+        width: 100vw;
+        padding: 0;
     }
 
     #nav_right > #nav_responsive > ul > li > a {
@@ -1208,7 +1210,7 @@ iframe{
     /* navResponsive start */
 
     #nav_right > #nav_responsive > ul {
-        padding: 10vw 14vw;
+        padding: 10vw 0vw;
     }
 
     #nav_right > #nav_responsive > ul > li > a {
