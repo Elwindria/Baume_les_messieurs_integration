@@ -810,6 +810,13 @@ iframe{
     /* btn checkbox end */
 }
     /*NavResponsive Stop */
+    /* Discover start */
+
+    .span_text_carousel .span_text_carousel_2 {
+        display: none;
+    }
+
+    /* Discover stop */
     /* TopOfpage start */
 
     .main_container_h {
