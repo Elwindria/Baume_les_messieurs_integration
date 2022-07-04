@@ -1,0 +1,27 @@
+body{
+    margin:0;
+}
+
+#desktop{
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(../images/backoffice/backoffice_desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 3.6458vw 10.4167vw;
+    box-sizing: border-box;
+}
+
+#main {
+    width: 79.1667vw;
+}
+
+#title{
+    display: flex;
+}
+
+.logo_baume{
+    width: 5vw;
+}
