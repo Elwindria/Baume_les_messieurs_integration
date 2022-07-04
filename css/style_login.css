@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+}
+
+#desktop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/backoffice/backoffice_desktop.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#main{
+    display: flex;
+    width: 65%;
+    box-shadow: -10px 10px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    background-color: #fbfbfb;
+    border-radius: 25px 0 0 25px;
+    width: 50%;
+    padding: 2.6042vw;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 1.875vw;
+    color: #151850;
+    text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 0;
+}
+
+.light_blue{
+    color: #414479;
+}
+
+p{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 1.25vw;
+    color: #151850;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 1.0417vw;
+    color: #606e7b;
+    padding: 1.0417vw 0;
+}
+
+input{
+    text-decoration: none;
+    color: #414479;
+    background-color: #fbfbfb;
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: .9375vw;
+    border: none;
+    width: 79%;
+    max-height: 60px;
+    height: 3.125vw;
+}
+
+.form_trait{
+    background-color: #606e7b;
+    border-radius: 25px;
+    height: .1563vw;
+    width: 80%;
+}
+
+.button_submit{
+    text-align: center;
+    color: #fbfbfb;
+    background-color: #414479;
+    border-radius: 25px;
+    width: 9.375vw;
+    height: 2.3438vw;
+    margin: 1.8229vw auto 0 auto;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    background-color: #414479;
+    border-radius: 0 25px 25px 0;
+    width: 50%;
+    padding: 2.6042vw;
+    justify-content: center;
+    align-items: center;
+    gap: 1.0417vw;
+    box-sizing: border-box;
+}
+
+#title>div{
+    display: flex;
+    gap: .7813vw;
+}
+
+.chapelle{
+    width: 9.375vw;
+    height: auto;
+}
+
+h2{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 1.1458vw;
+    color: #FBFBFB;
+    text-transform: uppercase;
+}
+
+#trait{
+    background-color: #fbfbfb;
+    height: .1563vw;
+    border-radius: 25px;
+}
+
+.logo_baume{
+    width: 2.3438vw;
+}
+
+/* Hover */
+
+.button_submit:hover{
+    background-color: #fbfbfb;
+    color: #414479;
+    border: 2px #414479 solid;
+}
+
+/* Hover */
+/* Responsive start */
+
+@media screen and (max-width: 1024){
+
+}
+
+@media screen and (max-width: 767px) {
+
+    #desktop {
+        background-image: url(../images/backoffice/backoffice_phone.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #main{
+        flex-direction: column-reverse;
+        width: 78.2269vw;
+        height: 90vh;
+    }
+
+    #left{
+        width: 100%;
+        height: 50%;
+        border-radius: 0 0 25px 25px;
+        padding: 3.9113vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 3.1291vw;
+    }
+
+    p{
+        font-size: 2.6076vw;
+    }
+
+    label{
+        font-size: 2.3468vw;
+    }
+
+    input{
+        font-size: 2.086vw;
+        width: 98%;
+    }
+
+    .form_trait{
+        height: 2px;
+        width: 100%;
+    }
+
+    .button_submit{
+        width: 20.8605vw;
+        height: 5.867vw;
+    }
+
+    #right{
+        width: 100%;
+        height: 50%;
+        border-radius: 25px 25px 0 0;
+    }
+
+    .chapelle{
+        width: 15.6454vw;
+    }
+
+    .logo_baume{
+        width: 4.5632vw;
+    }
+
+    h2{
+        font-size: 2.8683vw;
+    }
+
+    #trait{
+        height: 2px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 6vw;
+    }
+
+    p{
+        font-size: 5vw;
+        margin: 1.5645vw 0 2vw 0;
+    }
+
+    label{
+        font-size: 4vw;
+    }
+
+    input{
+        font-size: 3.5vw;
+        min-height: 25px;
+    }
+
+    .button_submit{
+        width: 35vw;
+        height: 8vw;
+    }
+
+    .chapelle{
+        width: 27vw;
+    }
+
+    .logo_baume{
+        width: 7vw;
+    }
+
+    h2{
+        font-size: 4vw;
+    }
+}
+
+/* Responsive end */
