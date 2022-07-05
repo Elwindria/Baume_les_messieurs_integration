@@ -1,4 +1,4 @@
-/* Carousel_discover version start */
+/* Carousel_discover start */
 
 const photoCarousel = document.querySelectorAll(".photo_carousel");
 
@@ -21,7 +21,7 @@ function fctCarousel(carousel, className) {
         carousel.children[0].classList.remove("hiden");
 }
 
-/* Carousel_discover version end */
+/* Carousel_discover end */
 /*Carousel_discover animation en savoir plus start */
 
 const divTextCarousel = document.querySelectorAll(".div_text_carousel");
