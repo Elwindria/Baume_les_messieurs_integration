@@ -642,7 +642,8 @@ iframe{
 }
 
 #input_email {
-    padding: .4167vw 25vw .4167vw 0;
+    padding: .4167vw 0 .4167vw 0;
+    width: 50vw;
     border-radius: 50px;
     border: 3px solid #414479;
     font-family: 'Montserrat';
@@ -1172,12 +1173,13 @@ iframe{
     }
 
     #input_email {
-        font-size: 2.5vw;
-        padding: 1.5vw 25vw 1.5vw 0;
+        font-size: 3.5vw;
+        padding: 2vw 0 2vw 0;
+        width: 75vw;
     }
 
     #input_email::placeholder {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     }
 
     #btn_mail {
