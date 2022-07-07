@@ -27,18 +27,19 @@ function fctCarousel(carousel, className) {
 const divTextCarousel = document.querySelectorAll(".div_text_carousel");
 
 divTextCarousel.forEach(element => {
-    element.addEventListener("mouseover", function() {
-        element.children[0].classList.add("typing_reverse");
-        element.children[1].classList.add("typing_reverse");
-        element.children[2].classList.add("typing_reverse");
-        element.children[3].style.display = ("unset");
-    })
-    element.addEventListener("mouseout", function() {
-        element.children[0].classList.remove("typing_reverse");
-        element.children[1].classList.remove("typing_reverse");
-        element.children[2].classList.remove("typing_reverse");
-        element.children[3].style.display = ("none");
-    })
+
+        element.addEventListener("mouseover", function() {
+            element.children[0].classList.add("typing_reverse");
+            element.children[1].classList.add("typing_reverse");
+            element.children[2].classList.add("typing_reverse");
+            element.children[3].style.display = ("unset");
+        })
+        element.addEventListener("mouseout", function() {
+            element.children[0].classList.remove("typing_reverse");
+            element.children[1].classList.remove("typing_reverse");
+            element.children[2].classList.remove("typing_reverse");
+            element.children[3].style.display = ("none");
+        })
 });
 
 /*Carousel_discover animation en savoir plus end */
@@ -68,6 +69,9 @@ function fctGaleriePhoto(moreOrLess) {
     arrowLeft.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+x+".webp')";
     galeryMain.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+p+".webp')";
     arrowRight.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+y+".webp')";
+
+    galeryMain.classList.add("galery_photo_animation");
+    setTimeout(() => {galeryMain.classList.remove("galery_photo_animation");}, 400);
 
     if (window.innerWidth < 767) { setTimeout(fctGaleriePhoto, 2000);}
 } 

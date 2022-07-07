@@ -261,6 +261,7 @@ html{
 #carousel {
     background-color: #000000;
     display: flex;
+    overflow: hidden;
 }
 
 .photo_carousel {
@@ -550,17 +551,16 @@ iframe{
 }
 
 @keyframes img_arrow_pop { from {opacity: 0;} to {opacity: 1;} }
+@keyframes galery_in { from {filter: brightness(0%);} to {filter: brightness(100%);}}
 
 #galery_main {
-    transition: all .6s;
     width: 70%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .galery_photo_animation{
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
+    animation: galery_in .4s;
 }
 
 /* galerie photo */
@@ -814,8 +814,9 @@ iframe{
     /*NavResponsive Stop */
     /* Discover start */
 
-    .span_text_carousel .span_text_carousel_2 {
-        display: none;
+    .span_text_carousel, .span_text_carousel_2{
+        font-size: 0px;
+        position:fixed;
     }
 
     /* Discover stop */
