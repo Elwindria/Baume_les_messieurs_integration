@@ -71,7 +71,7 @@ function fctGaleriePhoto(moreOrLess) {
     arrowRight.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+y+".webp')";
 
     galeryMain.classList.add("galery_photo_animation");
-    setTimeout(() => {galeryMain.classList.remove("galery_photo_animation");}, 400);
+    setTimeout(() => {galeryMain.classList.remove("galery_photo_animation");}, 600);
 
     if (window.innerWidth < 767) { setTimeout(fctGaleriePhoto, 2000);}
 } 

@@ -560,7 +560,7 @@ iframe{
 }
 
 .galery_photo_animation{
-    animation: galery_in .4s;
+    animation: galery_in .6s steps(80);
 }
 
 /* galerie photo */
@@ -812,14 +812,6 @@ iframe{
     /* btn checkbox end */
 }
     /*NavResponsive Stop */
-    /* Discover start */
-
-    .span_text_carousel, .span_text_carousel_2{
-        font-size: 0px;
-        position:fixed;
-    }
-
-    /* Discover stop */
     /* TopOfpage start */
 
     .main_container_h {
@@ -863,15 +855,11 @@ iframe{
 
     /* navResponsive start */
 
-    #nav_responsive_ul {
-        padding: 8vw 14vw;
-    }
-
     #nav_right > #nav_responsive > ul {
         top: 13.0378vw;
         gap: 3vw;
         width: 100vw;
-        padding: 0;
+        padding: 8vw 14vw;
     }
 
     #nav_right > #nav_responsive > ul > li > a {
@@ -903,6 +891,14 @@ iframe{
     }
 
     /*navBar stop */
+    /* Discover start */
+
+    .span_text_carousel, .span_text_carousel_2{
+        font-size: 0px;
+        position:fixed;
+    }
+
+    /* Discover stop */
     /* header start */
 
     #main_title > div {
@@ -926,6 +922,13 @@ iframe{
     }
 
     /* header end */
+    /* discover start */
+
+    #carousel{
+        max-height: 700px;
+    }
+
+    /* discover end */
     /* top_of_page start */
 
     #top_of_page {
@@ -1241,6 +1244,13 @@ iframe{
     }
 
     /* header end */
+    /* discover start */
+
+    #carousel{
+        max-height: 500px;
+    }
+
+    /* discover end */
     /* Galery Photo start */
     
     #galery {
