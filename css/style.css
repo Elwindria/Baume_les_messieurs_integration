@@ -551,7 +551,6 @@ iframe{
 }
 
 @keyframes img_arrow_pop { from {opacity: 0;} to {opacity: 1;} }
-@keyframes galery_in { from {filter: brightness(0%);} to {filter: brightness(100%);}}
 
 #galery_main {
     width: 70%;
@@ -559,9 +558,16 @@ iframe{
     background-size: cover;
 }
 
-.galery_photo_animation{
-    animation: galery_in .6s steps(80);
+.galery_photo_animation_in{
+    animation: galery_in .4s steps(80);
 }
+
+.galery_photo_animation_out{
+    animation: galery_out .4s steps(80);
+}
+
+@keyframes galery_in { from {filter: brightness(0%);} to {filter: brightness(100%);}}
+@keyframes galery_out { from {filter: brightness(100%);} to {filter: brightness(0%);}}
 
 /* galerie photo */
 /* footer start */

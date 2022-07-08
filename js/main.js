@@ -85,10 +85,21 @@ function fctGaleriePhoto(moreOrLess) {
     galeryMain.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+p+".webp')";
     arrowRight.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+y+".webp')";
 
-    galeryMain.classList.add("galery_photo_animation");
-    setTimeout(() => {galeryMain.classList.remove("galery_photo_animation");}, 600);
+    /* fondu start */
+    if (window.innerWidth < 767) {
+        galeryMain.classList.add("galery_photo_animation_in");
+        setTimeout(() => {galeryMain.classList.remove("galery_photo_animation_in");}, 400);
+        setTimeout(() => {galeryMain.classList.add("galery_photo_animation_out");}, 2600);
+        setTimeout(() => {galeryMain.classList.remove("galery_photo_animation_out");}, 3000);
+    } else {
+        galeryMain.classList.add("galery_photo_animation_out");
+        setTimeout(() => {galeryMain.classList.remove("galery_photo_animation_out");}, 400);
+        setTimeout(() => {galeryMain.classList.add("galery_photo_animation_in");}, 400);
+        setTimeout(() => {galeryMain.classList.remove("galery_photo_animation_in");}, 800);
+    }
+    /* fondu end */
 
-    if (window.innerWidth < 767) { setTimeout(fctGaleriePhoto, 2000);}
+    if (window.innerWidth < 767) { setTimeout(fctGaleriePhoto, 3000);}
 } 
 
 /* arrow_galerie_photo start */
