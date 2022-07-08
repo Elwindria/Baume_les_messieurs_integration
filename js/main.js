@@ -18,6 +18,7 @@ function fctCarousel(carousel, className) {
                 element.classList.add("last");
             } else if (element.classList.contains("last")) {
                 element.classList.remove("last");
+            /* Scroll start */
             } else if (element.classList.contains("activate") && element.classList[1] === className ){
                 if (className === 'carousel_1'){
                     abbaye.scrollIntoView({ behavior: 'smooth' })
@@ -28,6 +29,7 @@ function fctCarousel(carousel, className) {
                 } else if (className === 'carousel_4'){
                     reculee.scrollIntoView({ behavior: 'smooth'})
                 }
+            /* Scroll end */
             }
         element.classList.remove("activate");
         element.children[0].classList.add("hiden");
@@ -73,7 +75,9 @@ fctGaleriePhoto();
 
 function fctGaleriePhoto(moreOrLess) {
 
+    /* reponsive */
     if (window.innerWidth < 767) {galeryPhotoPhone = "/galery_photo_phone";} else {galeryPhotoPhone = "";}
+    /* reponsive */
 
     if (moreOrLess == -1 ){ x--, p--, y-- } else { x++, p++, y++ }
     
@@ -85,10 +89,12 @@ function fctGaleriePhoto(moreOrLess) {
     galeryMain.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+p+".webp')";
     arrowRight.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+y+".webp')";
 
+    /* fondu */
     galeryMain.classList.add("galery_photo_animation");
     setTimeout(() => {galeryMain.classList.remove("galery_photo_animation");}, 600);
+    /* fondu */
 
-    if (window.innerWidth < 767) { setTimeout(fctGaleriePhoto, 2000);}
+    if (window.innerWidth < 767) { setTimeout(fctGaleriePhoto, 3000);}
 } 
 
 /* arrow_galerie_photo start */
@@ -235,7 +241,7 @@ const callback = function( entries ) {
 };
 
 allImgMainContainer.forEach(element => {
-    const observer = new IntersectionObserver( callback);
+    const observer = new IntersectionObserver(callback);
     observer.observe(element);
 });
 
