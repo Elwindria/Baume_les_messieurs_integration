@@ -1,6 +1,11 @@
-/* Carousel_discover start */
+/* Carousel_discover start + Scroll Auto */
 
 const photoCarousel = document.querySelectorAll(".photo_carousel");
+
+const abbaye = document.getElementById("abbaye");
+const grotte = document.getElementById("grotte");
+const cascade = document.getElementById("cascade");
+const reculee = document.getElementById("reculee");
 
 photoCarousel.forEach(element => {
     element.onclick = function() {fctCarousel(element, element.classList[1])}
@@ -13,6 +18,16 @@ function fctCarousel(carousel, className) {
                 element.classList.add("last");
             } else if (element.classList.contains("last")) {
                 element.classList.remove("last");
+            } else if (element.classList.contains("activate") && element.classList[1] === className ){
+                if (className === 'carousel_1'){
+                    abbaye.scrollIntoView({ behavior: 'smooth' })
+                } else if (className === 'carousel_2'){
+                    grotte.scrollIntoView({ behavior: 'smooth'})
+                } else if (className === 'carousel_3'){
+                    cascade.scrollIntoView({ behavior: 'smooth'})
+                } else if (className === 'carousel_4'){
+                    reculee.scrollIntoView({ behavior: 'smooth'})
+                }
             }
         element.classList.remove("activate");
         element.children[0].classList.add("hiden");
@@ -21,7 +36,7 @@ function fctCarousel(carousel, className) {
         carousel.children[0].classList.remove("hiden");
 }
 
-/* Carousel_discover end */
+/* Carousel_discover + Scroll Auto end */
 /*Carousel_discover animation en savoir plus start */
 
 const divTextCarousel = document.querySelectorAll(".div_text_carousel");
@@ -101,24 +116,6 @@ const desktop = document.querySelector("#desktop");
 navLeft.onclick = function() { desktop.scrollIntoView({ behavior: 'smooth' })}
 
 /* scroll NavBar */
-/*scroll discover_carousel */
-
-const divTextCarousel1 = document.querySelector(".div_text_carousel_1");
-const divTextCarousel2 = document.querySelector(".div_text_carousel_2");
-const divTextCarousel3 = document.querySelector(".div_text_carousel_3");
-const divTextCarousel4 = document.querySelector(".div_text_carousel_4");
-
-const abbaye = document.getElementById("abbaye");
-const grotte = document.getElementById("grotte");
-const cascade = document.getElementById("cascade");
-const reculee = document.getElementById("reculee");
-
-divTextCarousel1.onclick = function() { abbaye.scrollIntoView({ behavior: 'smooth' })}
-divTextCarousel2.onclick = function() { grotte.scrollIntoView({ behavior: 'smooth'})}
-divTextCarousel3.onclick = function() { cascade.scrollIntoView({ behavior: 'smooth'})}
-divTextCarousel4.onclick = function() { reculee.scrollIntoView({ behavior: 'smooth'})}
-
-/*scroll discover_carousel */
 /*scroll navBar_btn_discover */
 
 const btnNavBarReculee = document.querySelector("#btn_navBar_reculee");
