@@ -551,16 +551,16 @@ iframe{
 }
 
 @keyframes img_arrow_pop { from {opacity: 0;} to {opacity: 1;} }
-@keyframes galery_in { from {filter: brightness(0%);} to {filter: brightness(100%);}}
 
 #galery_main {
     width: 70%;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all .2s ease-in-out;
 }
 
-.galery_photo_animation{
-    animation: galery_in .6s steps(80);
+.galery_photo_animation_in{
+    filter: brightness(0%);
 }
 
 /* galerie photo */
