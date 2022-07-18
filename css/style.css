@@ -556,18 +556,12 @@ iframe{
     width: 70%;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all .2s ease-in-out;
 }
 
 .galery_photo_animation_in{
-    animation: galery_in .4s steps(80);
+    filter: brightness(0%);
 }
-
-.galery_photo_animation_out{
-    animation: galery_out .4s steps(80);
-}
-
-@keyframes galery_in { from {filter: brightness(0%);} to {filter: brightness(100%);}}
-@keyframes galery_out { from {filter: brightness(100%);} to {filter: brightness(0%);}}
 
 /* galerie photo */
 /* footer start */

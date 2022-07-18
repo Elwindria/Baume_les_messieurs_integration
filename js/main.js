@@ -82,21 +82,12 @@ function fctGaleriePhoto(moreOrLess) {
     if (y == 0){ y = nbr_max_photo;} else if (y == nbr_max_photo+1) {y = 1;};
 
     arrowLeft.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+x+".webp')";
-    galeryMain.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+p+".webp')";
+    setTimeout(() => {galeryMain.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+p+".webp')";}, 225);
     arrowRight.style.backgroundImage = "url('images/galery_photo"+galeryPhotoPhone+"/galery_"+y+".webp')";
 
     /* fondu start */
-    if (window.innerWidth < 767) {
         galeryMain.classList.add("galery_photo_animation_in");
-        setTimeout(() => {galeryMain.classList.remove("galery_photo_animation_in");}, 400);
-        setTimeout(() => {galeryMain.classList.add("galery_photo_animation_out");}, 2600);
-        setTimeout(() => {galeryMain.classList.remove("galery_photo_animation_out");}, 3000);
-    } else {
-        galeryMain.classList.add("galery_photo_animation_out");
-        setTimeout(() => {galeryMain.classList.remove("galery_photo_animation_out");}, 400);
-        setTimeout(() => {galeryMain.classList.add("galery_photo_animation_in");}, 400);
-        setTimeout(() => {galeryMain.classList.remove("galery_photo_animation_in");}, 800);
-    }
+        setTimeout(() => {galeryMain.classList.remove("galery_photo_animation_in");}, 250);
     /* fondu end */
 
     if (window.innerWidth < 767) { setTimeout(fctGaleriePhoto, 3000);}
