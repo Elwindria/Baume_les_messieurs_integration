@@ -682,7 +682,7 @@ iframe{
     cursor: pointer;
 }
 
-#newsletter_error{
+#error_newsletter{
     color:#FF3C30;
     font-family: 'Montserrat';
     font-weight: 700;
@@ -1207,7 +1207,7 @@ iframe{
         width: 70%;
     }
 
-    #newsletter_error{
+    #error_newsletter{
         font-size: 3.5vw;
         align-self: center;
     }
