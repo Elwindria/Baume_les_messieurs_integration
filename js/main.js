@@ -246,3 +246,10 @@ allImgMainContainer.forEach(element => {
 });
 
 /* Intersection Observer end */
+/* Newsletter start */
+
+const formNewsletter = document.querySelector('#newsletter');
+const inputNewsletter = document.querySelector('#input_newsletter');
+const newsletterError = document.querySelector('#newsletter_error');
+
+/* Newsletter stop */

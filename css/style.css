@@ -633,12 +633,13 @@ iframe{
     flex-direction: column;
 }
 
-#newsletter > h5 {
+#newsletter > label {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.8229vw;
     color: #414479;
     align-self: center;
+    padding: 2.6042vw 0 2.6vw 0;
 }
 
 #newsletter > div {
@@ -646,7 +647,7 @@ iframe{
     gap: 1.5vw;
 }
 
-#input_email {
+#input_newsletter {
     padding: .4167vw 0 .4167vw 0;
     width: 50vw;
     border-radius: 50px;
@@ -659,7 +660,7 @@ iframe{
     color: #414479;
 }
 
-#input_email::placeholder {
+#input_newsletter::placeholder {
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.25vw;
@@ -668,7 +669,7 @@ iframe{
     text-indent: 1.5625vw;
 }
 
-#btn_mail {
+#btn_newsletter {
     font-family: 'Ubuntu';
     font-weight: 700;
     font-size: 1.6667vw;
@@ -681,7 +682,7 @@ iframe{
     cursor: pointer;
 }
 
-#email_result{
+#newsletter_error{
     color:#FF3C30;
     font-family: 'Montserrat';
     font-weight: 700;
@@ -717,7 +718,7 @@ iframe{
     fill: #151850;
 }
 
-#btn_mail:hover {
+#btn_newsletter:hover {
     color: #151850;
     background-color: #fbfbfb;
     border: 2px solid #151850;
@@ -1181,7 +1182,7 @@ iframe{
         height: .5vw;
     }
 
-    #newsletter > h5 {
+    #newsletter > label {
         font-size: 4vw;
     }
 
@@ -1190,23 +1191,23 @@ iframe{
         align-items: center;
     }
 
-    #input_email {
+    #input_newsletter {
         font-size: 3.5vw;
         padding: 2vw 0 2vw 0;
         width: 75vw;
     }
 
-    #input_email::placeholder {
+    #input_newsletter::placeholder {
         font-size: 3.5vw;
     }
 
-    #btn_mail {
+    #btn_newsletter {
         font-size: 4vw;
         padding: 1vw 2.5vw;
         width: 70%;
     }
 
-    #email_result{
+    #newsletter_error{
         font-size: 3.5vw;
         align-self: center;
     }
