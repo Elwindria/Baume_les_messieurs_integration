@@ -622,11 +622,15 @@ iframe{
     margin: 0 auto;
 }
 
+#newsletter_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #newsletter {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #newsletter > h5 {
@@ -634,6 +638,7 @@ iframe{
     font-weight: 700;
     font-size: 1.8229vw;
     color: #414479;
+    align-self: center;
 }
 
 #newsletter > div {
@@ -681,6 +686,7 @@ iframe{
     font-family: 'Montserrat';
     font-weight: 700;
     font-size: 1.25vw;
+    text-indent: 2vw;
 }
 
 #main_footer > p {
@@ -1202,6 +1208,7 @@ iframe{
 
     #email_result{
         font-size: 3.5vw;
+        align-self: center;
     }
 
     #main_footer > p {
