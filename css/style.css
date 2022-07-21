@@ -651,6 +651,7 @@ iframe{
     font-size: 1.25vw;
     text-align:start;
     text-indent: 2vw;
+    color: #414479;
 }
 
 #input_email::placeholder {
@@ -673,6 +674,13 @@ iframe{
     padding: .5208vw 2.5vw;
     border: 2px solid #414479;
     cursor: pointer;
+}
+
+#email_result{
+    color:#FF3C30;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 1.25vw;
 }
 
 #main_footer > p {
@@ -1190,6 +1198,10 @@ iframe{
         font-size: 4vw;
         padding: 1vw 2.5vw;
         width: 70%;
+    }
+
+    #email_result{
+        font-size: 3.5vw;
     }
 
     #main_footer > p {
