@@ -250,6 +250,25 @@ allImgMainContainer.forEach(element => {
 
 const formNewsletter = document.querySelector('#newsletter');
 const inputNewsletter = document.querySelector('#input_newsletter');
-const newsletterError = document.querySelector('#newsletter_error');
+const newsletterError = document.querySelector('#error_newsletter');
+
+
+formNewsletter.addEventListener('submit', function(e){
+    e.preventDefault();
+    checkNewsletter();
+})
+
+function checkNewsletter(){
+    if (inputNewsletter.validity.valueMissing) {
+        newsletterError.style.opacity = "1";
+        newsletterError.textContent = "Le champ est vide.";
+    } else if (inputNewsletter.validity.typeMismatch) {
+        newsletterError.style.opacity = "1";
+        newsletterError.textContent = inputNewsletter.value + " n'est pas une adresse email valide.";
+    } else {
+        newsletterError.style.opacity = "0";
+        console.log("good");
+    }
+}
 
 /* Newsletter stop */

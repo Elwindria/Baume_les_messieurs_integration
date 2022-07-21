@@ -688,6 +688,7 @@ iframe{
     font-weight: 700;
     font-size: 1.25vw;
     text-indent: 2vw;
+    opacity: 0;
 }
 
 #main_footer > p {
