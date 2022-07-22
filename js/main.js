@@ -255,10 +255,10 @@ const newsletterError = document.querySelector('#error_newsletter');
 
 formNewsletter.addEventListener('submit', function(e){
     e.preventDefault();
-    checkNewsletter();
+    checkValidityNewsletter();
 })
 
-function checkNewsletter(){
+function checkValidityNewsletter(){
     if (inputNewsletter.validity.valueMissing) {
         newsletterError.style.opacity = "1";
         newsletterError.textContent = "Le champ est vide.";
@@ -267,8 +267,15 @@ function checkNewsletter(){
         newsletterError.textContent = inputNewsletter.value + " n'est pas une adresse email valide.";
     } else {
         newsletterError.style.opacity = "0";
-        console.log("good");
+        newsletterError.textContent = " ";
+        createAjaxForNewsletter();
     }
+}
+
+function createAjaxForNewsletter(){
+    const formData = new FormData(formNewsletter);
+
+    console.log(formData);
 }
 
 /* Newsletter stop */
