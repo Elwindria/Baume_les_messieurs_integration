@@ -256,16 +256,22 @@ const newsletterError = document.querySelector('#error_newsletter');
 formNewsletter.addEventListener('submit', function(e){
     e.preventDefault();
     checkValidityNewsletter();
+    // Au submit => Je vérifie en JS la validité du mail
 })
 
+// Function vérification de validation du mail + Renvois du message erreur si mail = pas valide
 function checkValidityNewsletter(){
+    
     if (inputNewsletter.validity.valueMissing) {
+        newsletterError.style.color = "#FF3C30";
         newsletterError.style.opacity = "1";
         newsletterError.textContent = "Le champ est vide.";
     } else if (inputNewsletter.validity.typeMismatch) {
+        newsletterError.style.color = "#FF3C30";
         newsletterError.style.opacity = "1";
         newsletterError.textContent = inputNewsletter.value + " n'est pas une adresse email valide.";
     } else {
+        // Si mail valide alors reset du msg error + lancement function createAjaxNewsletter
         newsletterError.style.opacity = "0";
         newsletterError.textContent = " ";
         createAjaxForNewsletter();
@@ -273,9 +279,27 @@ function checkValidityNewsletter(){
 }
 
 function createAjaxForNewsletter(){
+    // Création d'un formData, qui récupère toutes les infos de mon formulaire HTML
     const formData = new FormData(formNewsletter);
 
-    console.log(formData);
+    // J'envois alors mon formData en méthod POST, au fichier news_mail.php
+    fetch("php/news_mail.php", { method: "POST", body: formData })
+
+    // Je récupère ensuite la response de mon php (/!\ La réponse n'est pas en formData mais en Json)
+    // Donc je dois utiliser la fonction toute faite .json pour traduire
+        .then(response => response.json())
+
+    // Je récupère alors le résultat traduit et je peux alors test la réponse. Voir si c'est bon ou non
+        .then((result) => {
+            if (result.responsePhp === "good") {
+                newsletterError.style.color = "#1BBA02"
+                newsletterError.style.opacity = "1";
+                newsletterError.textContent = "Votre mail à bien été enregistré. Merci beaucoup ^^";
+            }
+        })
+
+
+
 }
 
 /* Newsletter stop */
