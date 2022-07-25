@@ -291,15 +291,24 @@ function createAjaxForNewsletter(){
 
     // Je récupère alors le résultat traduit et je peux alors test la réponse. Voir si c'est bon ou non
         .then((result) => {
-            if (result.responsePhp === "good") {
+            if (result.responsePhp === "mail_is_good" && result.responseMYSQL === "no_error_MYSQL") {
                 newsletterError.style.color = "#1BBA02"
                 newsletterError.style.opacity = "1";
                 newsletterError.textContent = "Votre mail à bien été enregistré. Merci beaucoup ^^";
+            } else if (result.responsePhp === "mail_is_good" && result.responseMYSQL === "23000") {
+                newsletterError.style.color = "#FF3C30";
+                newsletterError.style.opacity = "1";
+                newsletterError.textContent = "L'adresse mail est déjà enregistré";
+            } else if (result.responsePhp === "mail_is_not_good" && result.responseMYSQL === "no_error_MYSQL"){
+                newsletterError.style.color = "#FF3C30";
+                newsletterError.style.opacity = "1";
+                newsletterError.textContent = inputNewsletter.value + " n'est pas une adresse email valide.";
+            } else {
+                newsletterError.style.color = "#FF3C30";
+                newsletterError.style.opacity = "1";
+                newsletterError.textContent = "Une erreur s'est produite";
             }
         })
-
-
-
 }
 
 /* Newsletter stop */
