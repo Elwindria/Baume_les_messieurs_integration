@@ -15,12 +15,12 @@ function ListMail(){
             
             let newColumn = document.createElement('td'); 
             newRowElement.appendChild(newColumn);
-            let newValueColumn = document.createTextNode(mail['mail']);
+            let newValueColumn = document.createTextNode(mail['date_mail']);
             newColumn.appendChild(newValueColumn);
             
             let newColumn2 = document.createElement('td'); 
             newRowElement.appendChild(newColumn2);
-            let newValueColumn2 = document.createTextNode(mail['date_mail']);
+            let newValueColumn2 = document.createTextNode(mail['mail']);
             newColumn2.appendChild(newValueColumn2);
             
             let newColumn3 = document.createElement('td'); 
