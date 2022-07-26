@@ -126,6 +126,10 @@ tr{
     height: 2.6042vw;
 }
 
+td{
+    text-align: center;
+}
+
 tr:nth-child(even) {
     background-color: #DCDCDC;
 }
@@ -134,7 +138,7 @@ tr:nth-child(odd) {
     background-color: #fbfbfb;
 }
 
-tbody > tr > th:nth-child(0n+2){
+tbody > tr > td:nth-child(0n+2){
     border: 3px solid #151850;
     border-width: 0 3px 0 3px;
 }
