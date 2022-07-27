@@ -20,7 +20,7 @@ body{
 }
 
 #main {
-    width: 79.1667vw;
+    width: 100%;
 }
 
 #title{
@@ -65,16 +65,22 @@ h1{
     border-radius: 100px;
     box-sizing: border-box;
     cursor: pointer;
+    border: 2px #fbfbfb solid;
 }
 
 #dark_blue{
     color: #151850;
 }
 
-img{
+#img_log{
     width: 3.6458vw;
     cursor: pointer;
     transition: .5s;
+}
+
+.trash{
+    width: 3vw;
+    cursor: pointer;
 }
 
 table{
@@ -146,14 +152,13 @@ tbody > tr > td:nth-child(0n+2){
 #csv:hover{
     color: #FBFBFB;
     background-color: #414479;
-    border: 2px #fbfbfb solid;
 }
 
 #csv:hover > #dark_blue {
     color: #fbfbfb;
 }
 
-img:hover{
+#img_log:hover{
     transform: rotate(-90deg);
 }
 
@@ -164,7 +169,8 @@ img:hover{
     }
 
     #main {
-        width: 86vw;
+        padding: 0 1.5625vw 0 1.5625vw;
+        width: unset;
     }
 
     #main_bar{
@@ -192,8 +198,29 @@ img:hover{
         font-size: 3vw;
     }
 
-    img{
+    #img_log{
         width: 6vw;
+    }
+
+    .trash{
+        width: 4.5vw;
+    }
+
+    #date{
+        border-width: 0 0 2px 0;
+    }
+    
+    #mail{
+        border-width: 0 3px 2px 2px;
+    }
+    
+    #bin{
+        border-width: 0 0 2px 0;
+    }
+
+    tbody > tr > td:nth-child(0n+2){
+        border: 2px solid #151850;
+        border-width: 0 2px 0 2px;
     }
 
     .th_main{
@@ -213,8 +240,12 @@ img:hover{
         font-size: 4.5vw;
     }
 
-    img{
+    #img_log{
         width: 8vw;
+    }
+
+    .trash{
+        width: 6vw;
     }
 
     .th_main{
