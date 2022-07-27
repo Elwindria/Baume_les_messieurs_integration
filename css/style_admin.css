@@ -79,7 +79,7 @@ h1{
 }
 
 .trash{
-    width: 3vw;
+    width: 2vw;
     cursor: pointer;
 }
 
@@ -203,7 +203,7 @@ tbody > tr > td:nth-child(0n+2){
     }
 
     .trash{
-        width: 4.5vw;
+        width: 4vw;
     }
 
     #date{
@@ -229,12 +229,12 @@ tbody > tr > td:nth-child(0n+2){
     }
 
     tr{
-        font-size: 2.4vw;
+        font-size: 2.2vw;
         height: 3.5vw;
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 480px){
 
     #csv{
         font-size: 4.5vw;
@@ -254,8 +254,8 @@ tbody > tr > td:nth-child(0n+2){
     }
 
     tr{
-        font-size: 4vw;
-        height: 5.5vw;
+        font-size: 3.5vw;
+        height: 4.5vw;
     }
 }
 
