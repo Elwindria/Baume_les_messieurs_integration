@@ -273,7 +273,7 @@ function checkValidityNewsletter(){
     } else {
         // Si mail valide alors reset du msg error + lancement function createAjaxNewsletter
         newsletterError.style.opacity = "0";
-        newsletterError.textContent = " ";
+        newsletterError.textContent = " ";
         createAjaxForNewsletter();
     }
 }
