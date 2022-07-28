@@ -4,7 +4,7 @@
 if (isset($_POST['input_newsletter']) && !empty($_POST['input_newsletter']) && filter_var($_POST['input_newsletter'], FILTER_VALIDATE_EMAIL)){
     
     //On initialise la variable $codeError, pour l'instant tout va bien
-    $codeError = "no_error_MYSQL";
+    $codeError = true;
 
     try{
         //On essaye de crée un objet PDO qui sert de lien entre Php à mysql
@@ -21,10 +21,10 @@ if (isset($_POST['input_newsletter']) && !empty($_POST['input_newsletter']) && f
     }
 
     // On envoit la réponse du php et Mysql en Json
-    echo json_encode(["responsePhp"=>"mail_is_good", "responseMYSQL"=>$codeError]);
+    echo json_encode(["responsePhp"=>true, "responseMYSQL"=>$codeError]);
 
     
 } else {
     //Si le mail n'a pas réussi les test, alors il n'est pas valide. On envoit l'info à JS via un Json
-    echo json_encode(["responsePhp"=>"mail_is_not_good", "responseMYSQL"=>"no_error_MYSQL"]);
+    echo json_encode(["responsePhp"=>false, "responseMYSQL"=>false]);
 }

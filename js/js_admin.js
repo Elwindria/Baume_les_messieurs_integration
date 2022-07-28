@@ -20,7 +20,11 @@ function createTable(result){
     result.forEach( mail => { 
         
         (i++)
+
+        // création des tr et td avec une class qui s'ingrémente, grâce à (i++)
+
         let newRowElement = document.createElement('tr');
+        newRowElement.classList.add("tr_"+i);
         tbodyTable.appendChild(newRowElement);
         
         let newColumn = document.createElement('td'); 
@@ -60,7 +64,21 @@ function deleteMail(index){
     //index+1 car mon premier td est la case 'supprimer'
     newIndex = index+1;
 
+    //selection du mail via l'index
     let mail = document.querySelector(".mail_"+newIndex).textContent;
-    console.log(mail);
+    let mailValue = new FormData();
+    mailValue.append("value", mail);
+
+    fetch ('php/deleteMail.php',{
+        method: "POST",
+        body: mailValue
+    })
+    .then(response => response.json())
+    .then((result) => {
+
+        // selection de la ligne du mail + suppresion de celle-ci
+        let trDelete = document.querySelector(".tr_"+newIndex);
+        trDelete.remove();
+    })
 }
 
