@@ -54,18 +54,37 @@ function initialisationDeleteMail(){
     const allTrash = document.querySelectorAll(".trash");
 
     allTrash.forEach((trash, index) => {
-        trash.addEventListener("click", function(){deleteMail(index)}) 
+        trash.addEventListener("click", function(){confirmDeleteMail(index)}) 
     });
 }
 
-//Suppression des mails
-function deleteMail(index){
+//Message Confirmation du mail
+function confirmDeleteMail(index){
+    console.log("confirmDelete")
+    const divDeleteValidate = document.querySelector("#div_delete_validate");
+    const buttonYes = document.querySelector("#yes");
+    const buttonNo = document.querySelector("#no");
+    const spanDeleteMail = document.querySelector("#span_delete_mail_validate");
 
     //index+1 car mon premier td est la case 'supprimer'
-    newIndex = index+1;
-
-    //selection du mail via l'index
+    let newIndex = index+1;
     let mail = document.querySelector(".mail_"+newIndex).textContent;
+
+    let textMail = document.createTextNode(mail);
+    spanDeleteMail.appendChild(textMail);
+
+    // divDeleteValidate.style.display = "unset";
+    buttonYes.addEventListener("click", function(){
+        console.log(newIndex);
+        divDeleteValidate.style.display = "none";
+        deleteMail(newIndex, mail)
+    })
+}
+
+//Suppression des mails
+function deleteMail(newIndex, mail){
+    
+    // console.log(newIndex);
     let mailValue = new FormData();
     mailValue.append("value", mail);
 
@@ -73,11 +92,10 @@ function deleteMail(index){
         method: "POST",
         body: mailValue
     })
-    .then(response => response.json())
-    .then((result) => {
-
+    .then(() => {
         // selection de la ligne du mail + suppresion de celle-ci
         let trDelete = document.querySelector(".tr_"+newIndex);
+        console.log(trDelete);
         trDelete.remove();
     })
 }

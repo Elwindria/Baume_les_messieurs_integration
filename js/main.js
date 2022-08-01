@@ -294,7 +294,7 @@ function createAjaxForNewsletter(){
             if (result.responsePhp === true && result.responseMYSQL === true) {
                 newsletterError.style.color = "#1BBA02"
                 newsletterError.style.opacity = "1";
-                newsletterError.textContent = "Votre mail à bien été enregistré. Merci beaucoup ^^";
+                newsletterError.textContent = "Votre mail à bien été enregistré. Merci beaucoup";
             } else if (result.responsePhp === true && result.responseMYSQL === "23000") {
                 newsletterError.style.color = "#FF3C30";
                 newsletterError.style.opacity = "1";

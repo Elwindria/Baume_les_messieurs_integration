@@ -147,6 +147,7 @@ tr:nth-child(odd) {
 tbody > tr > td:nth-child(0n+2){
     border: 3px solid #151850;
     border-width: 0 3px 0 3px;
+    word-break: break-all;
 }
 
 #csv:hover{
@@ -160,6 +161,56 @@ tbody > tr > td:nth-child(0n+2){
 
 #img_log:hover{
     transform: rotate(-90deg);
+}
+
+#div_delete_validate{
+    display: none;
+    position: fixed;
+    top: 35vh;
+    background-color: #fbfbfb;
+    border-radius: 50px;
+    box-shadow: #0000007a -5px 5px;
+    padding: 3vw;
+    border: 3px solid #151850;
+}
+
+#div_delete_validate > p {
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 1.3vw;
+    color: #151850;
+}
+
+#span_delete_mail_validate{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 1.3vw;
+    color: #151850;
+    justify-content: center;
+}
+
+#flex_delete_validate{
+    display: flex;
+    justify-content: center;
+    gap:35%;
+}
+
+.reponse{
+    font-family: 'Ubuntu';
+    font-weight: 700;
+    font-size: 1.3vw;
+    padding: 0.8vw 1.8229vw;
+    border-radius: 100px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border: 2px #151850 solid;
+    color:#fbfbfb;
+    background-color: #151850;
+}
+
+.reponse:hover{
+    background-color: #fbfbfb;
+    color: #151850;
 }
 
 @media screen and (max-width: 767px){
@@ -232,6 +283,18 @@ tbody > tr > td:nth-child(0n+2){
         font-size: 2.2vw;
         height: 3.5vw;
     }
+
+    #div_delete_validate > p {
+        font-size: 2vw;
+    }
+    
+    #span_delete_mail_validate{
+        font-size: 2vw;
+    }
+    
+    .reponse{
+        font-size: 2vw;
+    }
 }
 
 @media screen and (max-width: 480px){
@@ -256,6 +319,18 @@ tbody > tr > td:nth-child(0n+2){
     tr{
         font-size: 3.5vw;
         height: 4.5vw;
+    }
+
+    #div_delete_validate > p {
+        font-size: 3vw;
+    }
+    
+    #span_delete_mail_validate{
+        font-size: 3vw;
+    }
+    
+    .reponse{
+        font-size: 3vw;
     }
 }
 
