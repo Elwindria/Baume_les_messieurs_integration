@@ -11,6 +11,7 @@ body{
     justify-content: center;
     padding: 3.6458vw 10.4167vw;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 #main_bar {
@@ -163,10 +164,18 @@ tbody > tr > td:nth-child(0n+2){
     transform: rotate(-90deg);
 }
 
-#div_delete_validate{
-    display: none;
+#background_delete{
     position: fixed;
-    top: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000070;
+    width: 100%;
+    height: 100%;
+    top:0;
+}
+
+#div_delete_validate{
     background-color: #fbfbfb;
     border-radius: 50px;
     box-shadow: #0000007a -5px 5px;
@@ -179,6 +188,7 @@ tbody > tr > td:nth-child(0n+2){
     font-weight: 700;
     font-size: 1.3vw;
     color: #151850;
+    text-align: center;
 }
 
 #span_delete_mail_validate{

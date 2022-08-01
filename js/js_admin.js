@@ -60,26 +60,44 @@ function initialisationDeleteMail(){
 
 //Message Confirmation du mail
 function confirmDeleteMail(index){
-    console.log("confirmDelete")
-    const divDeleteValidate = document.querySelector("#div_delete_validate");
-    const buttonYes = document.querySelector("#yes");
-    const buttonNo = document.querySelector("#no");
-    const spanDeleteMail = document.querySelector("#span_delete_mail_validate");
+
+    const templateDeleteValidate = document.querySelector("#template_delete_validate");
+    const clone = document.importNode(templateDeleteValidate.content, true);
+    const body = document.querySelector('body');
+    const buttonYes = clone.querySelector("#yes");
+    const buttonNo = clone.querySelector("#no");
+    const spanDeleteMail = clone.querySelector("#span_delete_mail_validate");
 
     //index+1 car mon premier td est la case 'supprimer'
     let newIndex = index+1;
+
     let mail = document.querySelector(".mail_"+newIndex).textContent;
 
     let textMail = document.createTextNode(mail);
     spanDeleteMail.appendChild(textMail);
 
-    // divDeleteValidate.style.display = "unset";
+    //apparition de la fenêtre
+    body.appendChild(clone);
+
+    // Confirmation oui ou non
     buttonYes.addEventListener("click", function(){
-        console.log(newIndex);
-        divDeleteValidate.style.display = "none";
-        deleteMail(newIndex, mail)
+        deleteMail(newIndex, mail);
+        document.querySelector("#background_delete").remove();
+    })
+    buttonNo.addEventListener("click", function(){
+        document.querySelector("#background_delete").remove();
     })
 }
+
+//fermeture du message de confirmation au click en dehors
+document.addEventListener("click", function(e){
+    var eTarget = e.target;
+    
+    //si background(le fond sombre de la pop up) existe + on clique dessus, alors on delete
+    if (document.querySelector("#background_delete") && eTarget === document.querySelector("#background_delete")){
+        document.querySelector("#background_delete").remove();
+    }
+});
 
 //Suppression des mails
 function deleteMail(newIndex, mail){
@@ -95,7 +113,6 @@ function deleteMail(newIndex, mail){
     .then(() => {
         // selection de la ligne du mail + suppresion de celle-ci
         let trDelete = document.querySelector(".tr_"+newIndex);
-        console.log(trDelete);
         trDelete.remove();
     })
 }

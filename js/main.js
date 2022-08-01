@@ -193,19 +193,22 @@ const burgerLine1 = document.querySelector('.burgerline1');
 const burgerLine2 = document.querySelector('.burgerline2');
 const burgerLine3 = document.querySelector('.burgerline3');
 
-// menuToggle.onclick = function () {navResponsiveOpenOrNot(menuToggle)};
 document.addEventListener("click", function(e){
     var eTarget = e.target;
+    console.log(eTarget);
     navResponsiveOpenOrNot(eTarget);
 });
 
 function navResponsiveOpenOrNot(e){
 
+        //open
     if ( navResponsiveUl.style.transform != 'translateX(0px)' && (e === menuToggle || e === burgerLine1 || e === burgerLine2 || e === burgerLine3 )){
         navResponsiveUl.style.transform = ("translateX(0px)");
         burgerLine1.style.transform = ('translateY(3px) rotate(45deg)');
         burgerLine2.style.display =("none");
         burgerLine3.style.transform = ('translateY(-3px) rotate(-45deg)');
+
+        //close
     } else if (navResponsiveUl.style.transform = 'translateX(0px)' && e != navResponsiveUl) {
         navResponsiveUl.style.transform = ("translateX(100%)");
         burgerLine1.style.transform = ('unset');
@@ -299,7 +302,7 @@ function createAjaxForNewsletter(){
                 newsletterError.style.color = "#FF3C30";
                 newsletterError.style.opacity = "1";
                 newsletterError.textContent = "L'adresse mail est déjà enregistré";
-            } else if (result.responsePhp === false && result.responseMYSQL === true){
+            } else if (result.responsePhp === false && result.responseMYSQL === false){
                 newsletterError.style.color = "#FF3C30";
                 newsletterError.style.opacity = "1";
                 newsletterError.textContent = inputNewsletter.value + " n'est pas une adresse email valide.";
