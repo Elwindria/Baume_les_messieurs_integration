@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
     ListMail();
 })
 
-// Demande des mails
+// Demande des mails dans la base SQL
 function ListMail(){
     fetch ('php/listMail.php')
     .then(response => response.json())
@@ -27,13 +27,14 @@ function createTable(result){
         newRowElement.classList.add("tr_"+i);
         tbodyTable.appendChild(newRowElement);
         
-        let newColumn = document.createElement('td'); 
+        let newColumn = document.createElement('td');
+        newColumn.classList.add("date_mail", "date_mail"+i);
         newRowElement.appendChild(newColumn);
         let newValueColumn = document.createTextNode(mail['date_mail']);
         newColumn.appendChild(newValueColumn);
         
         let newColumn2 = document.createElement('td');
-        newColumn2.classList.add("mail_"+i);
+        newColumn2.classList.add("mail_"+i, "mail");
         newRowElement.appendChild(newColumn2);
         let newValueColumn2 = document.createTextNode(mail['mail']);
         newColumn2.appendChild(newValueColumn2);
@@ -102,7 +103,6 @@ document.addEventListener("click", function(e){
 //Suppression des mails
 function deleteMail(newIndex, mail){
     
-    // console.log(newIndex);
     let mailValue = new FormData();
     mailValue.append("value", mail);
 
@@ -117,3 +117,27 @@ function deleteMail(newIndex, mail){
     })
 }
 
+/* Trier les mails par date/mail */
+
+const allImgSort = document.querySelectorAll(".img_sort")
+const thDate = document.querySelector("#date");
+const thMail = document.querySelector("#mail");
+
+thDate.addEventListener("click", ()=>{rotate(0)});
+thMail.addEventListener("click", ()=>{rotate(1)});
+
+function rotate(index){
+    if(allImgSort[index].classList[1] != "transform_img_sort"){
+        allImgSort[index].classList.add("transform_img_sort");
+    } else {
+        allImgSort[index].classList.remove("transform_img_sort");
+    }
+    sort(index);
+}
+
+function sort(index){
+
+    const allDateMail = document.querySelectorAll(".date_mail");
+    const allMail = document.querySelectorAll(".mail");
+
+}

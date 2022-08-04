@@ -5,7 +5,7 @@ $codeError = "no_error_MYSQL";
 try {
     include ('newPDO.php');
 
-    $myRequestSQL = $db->prepare("SELECT mail, date_mail FROM mail");
+    $myRequestSQL = $db->prepare("SELECT mail, DATE_FORMAT(date_mail, '%d/%m/%Y') AS date_mail FROM mail ORDER BY date_mail");
     $myRequestSQL->execute();
 
     $resultSQL = $myRequestSQL->fetchAll(PDO::FETCH_ASSOC);

@@ -94,6 +94,10 @@ table{
     width: 20%;
 }
 
+#bin{
+    cursor: unset;
+}
+
 #date{
     border-radius: 25px 0 0 0;
     border-width: 0 0 3px 0;
@@ -123,6 +127,17 @@ table{
     text-align: center;
     border: 3px solid #151850;
     color: #151850;
+    cursor: pointer;
+}
+
+.img_sort{
+    width: 1.0417vw;
+    height: 1.0417vw;
+    transition: all .5s;
+}
+
+.transform_img_sort{
+    transform: rotate(180deg);
 }
 
 tr{
@@ -226,12 +241,7 @@ tbody > tr > td:nth-child(0n+2){
 @media screen and (max-width: 767px){
     #desktop{
         background-image: url(../images/backoffice/backoffice_phone.webp);
-        padding: 3vw 6vw;
-    }
-
-    #main {
-        padding: 0 1.5625vw 0 1.5625vw;
-        width: unset;
+        padding: 2vw 3vw;
     }
 
     #main_bar{
@@ -261,6 +271,11 @@ tbody > tr > td:nth-child(0n+2){
 
     #img_log{
         width: 6vw;
+    }
+
+    .img_sort{
+        width: 2.0417vw;
+        height: 2.0417vw;
     }
 
     .trash{

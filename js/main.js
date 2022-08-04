@@ -195,7 +195,6 @@ const burgerLine3 = document.querySelector('.burgerline3');
 
 document.addEventListener("click", function(e){
     var eTarget = e.target;
-    console.log(eTarget);
     navResponsiveOpenOrNot(eTarget);
 });
 
