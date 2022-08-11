@@ -1,6 +1,6 @@
 <?php
 
-$codeError = "no_error_MYSQL";
+$codeError = true;
 
 try {
     include ('newPDO.php');

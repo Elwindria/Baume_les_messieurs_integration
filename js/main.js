@@ -257,6 +257,7 @@ const newsletterError = document.querySelector('#error_newsletter');
 
 formNewsletter.addEventListener('submit', function(e){
     e.preventDefault();
+    // Empeche le rafraichissement de la page
     checkValidityNewsletter();
     // Au submit => Je vérifie en JS la validité du mail
 })
